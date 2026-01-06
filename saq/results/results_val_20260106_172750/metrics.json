@@ -1,0 +1,44 @@
+{
+  "split": "val",
+  "timestamp": "20260106_172750",
+  "overall_accuracy": 0.0,
+  "country_results": {
+    "CN": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 68
+    },
+    "GB": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 66
+    },
+    "US": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 68
+    },
+    "IR": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 65
+    }
+  },
+  "format_results": {
+    "MMDD": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 3
+    },
+    "HHMM": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 7
+    },
+    "TEXT": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 257
+    }
+  }
+}

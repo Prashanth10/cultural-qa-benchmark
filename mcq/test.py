@@ -47,7 +47,7 @@ def extract_choice(text):
 
 def main():
     # --- Configuration ---
-    in_path = "cultural-qa-benchmark/mcq/data/test_dataset_mcq.csv"  # Ensure this file exists
+    in_path = "mcq/data/test_dataset_mcq.csv"  # Ensure this file exists
     out_path = "pred_mcq.json"
 
     if not Path(in_path).exists():

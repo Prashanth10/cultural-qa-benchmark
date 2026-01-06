@@ -1,0 +1,12 @@
+torch==2.1.2
+transformers==4.41.2
+accelerate==0.30.1
+sentencepiece==0.2.0
+python-dotenv==1.2.1
+
+pandas==1.5.0
+numpy==1.23.0
+scikit-learn==1.1.0
+bitsandbytes==0.41.0
+peft==0.7.0
+tqdm==4.66.0
