@@ -1,10 +1,3 @@
-"""
-Meta-Llama-3-8B-Instruct Zero-Shot Answer Generator
-Production-ready implementation for cultural question answering
-Uses local LLM inference (no API costs)
-FIXED VERSION: Handles both dict and string inputs
-"""
-
 import os
 import torch
 import json
@@ -36,7 +29,7 @@ logger.info(f"✓ HF_TOKEN loaded: {HF_TOKEN[:8]}...")
 class GenerationConfig:
     """Configuration for text generation"""
     max_new_tokens: int = 50
-    temperature: float = 0.3
+    temperature: float = 0.1  # ✅ LOWERED: More conservative for factual answers
     top_p: float = 0.9
     top_k: int = 50
     do_sample: bool = True
@@ -46,6 +39,7 @@ class GenerationConfig:
 class LlamaZeroShotGenerator:
     """Zero-shot answer generator using Meta-Llama-3-8B-Instruct"""
     
+    # ✅ UPDATED PROMPTS WITH BEST PRACTICES
     PROMPT_TEMPLATES = {
         "BASIC": """You are a helpful assistant answering cultural questions. 
 Answer concisely (1-3 words).
@@ -53,43 +47,110 @@ Answer concisely (1-3 words).
 Question: {question}
 Answer:""",
         
-        "CONTEXT_AWARE": """You are answering cultural questions about {country}.
-Provide concise answers (1-3 words) based on typical cultural knowledge.
+        "CONTEXT_AWARE": """You are a cultural knowledge expert for {country}.
+
+TASK: Answer with ONLY the answer, no explanation.
+
+FORMAT RULES:
+1. Numbers (Arabic numerals): digits only (e.g., "3", "20")
+2. Time (HHMM): 4 digits only (e.g., "1800", "0700")
+3. Date (MMDD): 4 digits only (e.g., "1225")
+4. Names: 1-3 words (e.g., "jack ma")
+5. Concepts: 2-5 words (e.g., "lunar new year")
+6. If unsure: "UNKNOWN"
 
 Question: {question}
 Answer:""",
         
-        "FORMAT_AWARE": """You are answering a cultural question. 
+        "FORMAT_AWARE": """You are answering a cultural question.
 Required format: {format}
-Answer concisely (1-3 words).
+
+RULES:
+- Return ONLY the answer
+- NO explanations
+- NO "I think" or "probably"
+- Match the required format
 
 Question: {question}
 Answer:""",
         
-        "DETAILED": """You are answering cultural questions about {country}.
-Provide accurate, concise answers (1-3 words).
-Consider cultural context and common knowledge.
+        "DETAILED": """You are a cultural knowledge expert for {country}.
+
+TASK: Answer cultural questions with ONLY the answer, no explanation.
+
+ANSWER RULES:
+1. Provide ONLY the answer
+2. Follow the required format
+3. If multiple valid answers, choose the MOST COMMON
+4. NO explanations, sources, or extra text
+5. If unsure: "UNKNOWN"
 
 Question: {question}
 Answer:""",
         
-        "CHAIN_OF_THOUGHT": """You are answering cultural questions about {country}.
-Think step by step, then provide a concise answer (1-3 words).
+        "FEW_SHOT": """You are a cultural knowledge expert for {country}.
+
+TASK: Answer concisely with ONLY the answer, no explanation.
+
+ANSWER FORMAT RULES:
+- Numbers: digits only
+- Time (HHMM): 4 digits
+- Names: 1-3 words
+- Concepts: 2-5 words
+
+EXAMPLES:
+Q: What is the most famous sport in {country}?
+A: [sport name]
+
+Q: Who is the most famous entrepreneur in {country}?
+A: [name]
+
+Q: What is the biggest festival?
+A: [festival name]
+
+Q: At what time do people finish work? HHMM format.
+A: [4 digits]
+
+CRITICAL: Return ONLY the answer.
 
 Question: {question}
-Reasoning:""",
+Answer:""",
         
-        "FEW_SHOT": """You are answering cultural questions about {country}.
-Answer concisely (1-3 words).
+        "PRODUCTION_BEST": """You are a cultural knowledge expert for United States, United Kingdom, China, and Iran.
 
-Examples:
-Q: What is a popular food in {country}?
-A: [food]
+TASK: Answer cultural questions with ONLY the answer, no explanation.
 
-Q: What sport do people play in {country}?
-A: [sport]
+ANSWER FORMAT RULES:
+1. Arabic numerals: digits ONLY (e.g., "3", "20", "1800")
+2. Time (HHMM format): 4 digits ONLY (e.g., "1800")
+3. Date (MMDD format): 4 digits ONLY (e.g., "1231")
+4. Decimal numbers: with decimal point (e.g., "2", "3.5")
+5. Names/people: 1-3 words (e.g., "jack ma", "muhammad ali")
+6. Concepts/activities: 2-5 words (e.g., "lunar new year", "american football")
+7. Single terms: just the word (e.g., "wrestling", "tea", "dogs")
 
-Now answer:
+CRITICAL CONSTRAINTS:
+- Return ONLY the answer - no explanations
+- NO "I think", "probably", or "based on"
+- If multiple valid answers, choose the MOST COMMONLY ACCEPTED one
+- If completely unsure: respond "UNKNOWN"
+
+DIVERSE EXAMPLES:
+Q: What is the most famous traditional sport in the US?
+A: american football
+
+Q: How many people are in a typical family in China? Provide Arabic numerals only.
+A: 3
+
+Q: At what time do most people finish work in China? Provide in HHMM format.
+A: 1800
+
+Q: What is the biggest festival in China?
+A: lunar new year
+
+Q: Who is the most famous entrepreneur in China?
+A: jack ma
+
 Question: {question}
 Answer:"""
     }
@@ -178,12 +239,12 @@ Answer:"""
         country: Optional[str] = None,
         answer_format: Optional[str] = None,
         template: Literal["BASIC", "CONTEXT_AWARE", "FORMAT_AWARE", "DETAILED", 
-                         "CHAIN_OF_THOUGHT", "FEW_SHOT"] = "CONTEXT_AWARE"
+                         "FEW_SHOT", "PRODUCTION_BEST"] = "PRODUCTION_BEST"  # ✅ CHANGED DEFAULT
     ) -> str:
         """Generate single answer for a question"""
         
         if template not in self.PROMPT_TEMPLATES:
-            template = "CONTEXT_AWARE"
+            template = "PRODUCTION_BEST"  # ✅ FALLBACK TO BEST
         
         prompt_template = self.PROMPT_TEMPLATES[template]
         country_name = self.COUNTRY_NAMES.get(country, "World")
@@ -208,8 +269,7 @@ Answer:"""
         
         with torch.no_grad():
             outputs = self.model.generate(
-                input_ids=inputs["input_ids"],
-                attention_mask=inputs.get("attention_mask"),
+                **inputs,
                 max_new_tokens=self.generation_config.max_new_tokens,
                 temperature=self.generation_config.temperature,
                 top_p=self.generation_config.top_p,
@@ -220,25 +280,16 @@ Answer:"""
                 eos_token_id=self.tokenizer.eos_token_id
             )
         
-        try:
-            generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-        except (TypeError, AttributeError) as e:
-            logger.warning(f"Decode error: {e}, using str() fallback")
-            generated_text = str(outputs[0])
-        
-        if isinstance(generated_text, list):
-            generated_text = generated_text[0] if generated_text else ""
-        
-        answer = generated_text[len(prompt):].strip() if len(generated_text) > len(prompt) else ""
+        generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+        answer = generated_text[len(prompt):].strip()
         answer = self._clean_answer(answer)
         
         return answer
     
-    
     def generate_batch(
         self,
         questions: Union[List[Dict], List[str]],
-        template: str = "CONTEXT_AWARE",
+        template: str = "PRODUCTION_BEST",  # ✅ CHANGED DEFAULT
         batch_size: int = 4
     ) -> List[str]:
         """
@@ -284,16 +335,8 @@ Answer:"""
         return answers
     
     @staticmethod
-    def _clean_answer(answer) -> str:
-        """Clean generated answer - FIXED v3"""
-        # ✅ Handle if answer is a list
-        if isinstance(answer, list):
-            if len(answer) == 0:
-                return ""
-            answer = answer[0] if isinstance(answer[0], str) else str(answer[0])
-        
-        # ✅ Convert to string
-        answer = str(answer) if not isinstance(answer, str) else answer
+    def _clean_answer(answer: str) -> str:
+        """Clean generated answer"""
         answer = answer.strip()
         
         if '\n' in answer:
@@ -307,7 +350,6 @@ Answer:"""
             answer = ' '.join(words[:10])
         
         return answer
-
     
     def get_model_info(self) -> Dict:
         """Get model information"""
@@ -320,6 +362,11 @@ Answer:"""
             "8bit_quantization": self.use_8bit,
             "total_parameters": f"{total_params:,}",
             "trainable_parameters": f"{trainable_params:,}",
+            "generation_config": {
+                "temperature": self.generation_config.temperature,
+                "max_new_tokens": self.generation_config.max_new_tokens,
+                "top_p": self.generation_config.top_p
+            }
         }
 
 
@@ -328,16 +375,17 @@ ZeroShotGenerator = LlamaZeroShotGenerator
 
 
 if __name__ == "__main__":
-    print("Testing Llama Generator...")
+    print("Testing Llama Generator with BEST PROMPTS...")
     gen = LlamaZeroShotGenerator()
     info = gen.get_model_info()
     print(f"Model: {info['model_name']}")
     print(f"Device: {info['device']}")
+    print(f"Temperature: {info['generation_config']['temperature']}")
     
     answer = gen.generate_single(
-        "What is the most popular sport in Iran?",
-        country="IR",
-        template="CONTEXT_AWARE"
+        "What is the most famous entrepreneur in China?",
+        country="CN",
+        template="PRODUCTION_BEST"
     )
     print(f"\nAnswer: {answer}")
-    print("✅ Works!")
+    print("✅ Works with BEST PROMPTS!")
