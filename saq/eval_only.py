@@ -592,7 +592,7 @@ class ModelEvaluatorWithEnsemble:
             'confidence': confidences,
         })
         
-        Path("results").mkdir(exist_ok=True)
+        Path("test").mkdir(exist_ok=True)
         tsv_df.to_csv(output_path, sep='\t', index=False, header=True)
         detailed_path = output_path.replace('.tsv', '_detailed.tsv')
         detailed_df.to_csv(detailed_path, sep='\t', index=False, header=True)
