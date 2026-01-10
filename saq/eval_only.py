@@ -1,9 +1,9 @@
 """
-eval_only_with_prompting_v2_FIXED.py - CORRECTED VERSION
+eval_only.py - WITH ENSEMBLE VOTING
 - Uses en_question (English) only
 - Outputs TSV only (no CSV needed)
 - Uses ID from test dataset first column
-- FIXED: Removes instruction text from generated answers
+- ENSEMBLE VOTING: Generates 3 predictions with different temperatures and votes
 """
 
 import os
@@ -18,6 +18,7 @@ from typing import Dict, List, Tuple
 from dotenv import load_dotenv
 from ast import literal_eval
 import time
+from collections import Counter
 
 from transformers import (
     AutoTokenizer,
@@ -69,6 +70,16 @@ FORMAT_NAMES = {
     "TEXT": "plain text (1-3 words)",
     "HHMM": "time format (HH:MM)",
     "NUMERIC": "numeric",
+}
+
+# ============================================================================
+# ENSEMBLE VOTING CONFIGURATION
+# ============================================================================
+
+ENSEMBLE_CONFIG = {
+    "num_predictions": 3,
+    "temperatures": [0.05, 0.10, 0.15],  # Conservative, Balanced, Creative
+    "voting_method": "majority",  # majority, frequency-based, confidence
 }
 
 
@@ -133,11 +144,54 @@ def evaluate_answer_correct_method(
 
 
 # ============================================================================
-# IMPROVED EVALUATOR WITH PROMPTING STRATEGY - FIXED ANSWER CLEANING
+# ENSEMBLE VOTING HELPER FUNCTIONS
 # ============================================================================
 
-class ModelEvaluatorWithPrompting:
-    """Evaluate fine-tuned model using consistent prompting strategy"""
+def vote_ensemble_predictions(predictions: List[str]) -> Tuple[str, float]:
+    """
+    Vote on ensemble predictions and return winning answer with confidence
+    
+    Args:
+        predictions: List of generated answers from different temperatures
+    
+    Returns:
+        (winning_answer, confidence_score)
+    """
+    
+    # Clean all predictions
+    cleaned_preds = [pred.strip() for pred in predictions if pred]
+    
+    if not cleaned_preds:
+        return "", 0.0
+    
+    if len(cleaned_preds) == 1:
+        return cleaned_preds[0], 1.0
+    
+    # Count votes
+    vote_counts = Counter(cleaned_preds)
+    winning_answer, vote_count = vote_counts.most_common(1)[0]
+    
+    # Calculate confidence (percentage of votes received)
+    confidence = vote_count / len(cleaned_preds)
+    
+    return winning_answer, confidence
+
+
+def format_ensemble_debug(predictions: List[str], winner: str, confidence: float) -> str:
+    """Format ensemble voting information for debugging"""
+    debug_info = f"[Ensemble] "
+    for i, pred in enumerate(predictions):
+        debug_info += f"Gen{i+1}({ENSEMBLE_CONFIG['temperatures'][i]}):'{pred}' "
+    debug_info += f"→ Vote:'{winner}'({confidence:.1%})"
+    return debug_info
+
+
+# ============================================================================
+# IMPROVED EVALUATOR WITH ENSEMBLE VOTING
+# ============================================================================
+
+class ModelEvaluatorWithEnsemble:
+    """Evaluate fine-tuned model using ensemble voting strategy"""
     
     def __init__(
         self,
@@ -239,18 +293,17 @@ class ModelEvaluatorWithPrompting:
         
         return answer.strip()
     
-    def generate_answer(
+    def generate_answer_single(
         self,
         question: str,
         country: str = None,
         answer_format: str = None,
         template: str = "CONTEXT_AWARE",
-        max_tokens: int = 15,  # Reduced further to prevent long outputs
+        temperature: float = 0.1,
+        max_tokens: int = 15,
     ) -> str:
         """
-        Generate answer using prompting strategy
-        Ensures short, crisp answers (1-3 words)
-        Uses en_question (English) only
+        Generate SINGLE answer with given temperature
         """
         
         # Prepare prompt
@@ -275,14 +328,14 @@ class ModelEvaluatorWithPrompting:
             max_length=512,
         ).to(self.device)
         
-        # Generate
+        # Generate with specific temperature
         with torch.no_grad():
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_tokens,
-                temperature=0.1,  # Very low for focused answers
+                temperature=temperature,
                 top_p=0.9,
-                do_sample=False,  # Greedy decoding
+                do_sample=False if temperature < 0.01 else True,
                 pad_token_id=self.tokenizer.eos_token_id,
             )
         
@@ -292,28 +345,77 @@ class ModelEvaluatorWithPrompting:
             skip_special_tokens=True,
         ).strip()
         
-        # AGGRESSIVE CLEANING - Remove instruction text
+        # Clean
         answer = self.clean_generated_answer(answer)
         
         return answer
     
+    def generate_answer_ensemble(
+        self,
+        question: str,
+        country: str = None,
+        answer_format: str = None,
+        template: str = "CONTEXT_AWARE",
+        max_tokens: int = 15,
+        debug: bool = False,
+    ) -> Tuple[str, float, List[str]]:
+        """
+        Generate ENSEMBLE of predictions using different temperatures
+        Vote on best answer
+        
+        Returns:
+            (winning_answer, confidence, all_predictions)
+        """
+        
+        predictions = []
+        temperatures = ENSEMBLE_CONFIG["temperatures"]
+        
+        # Generate with each temperature
+        for temp in temperatures:
+            pred = self.generate_answer_single(
+                question=question,
+                country=country,
+                answer_format=answer_format,
+                template=template,
+                temperature=temp,
+                max_tokens=max_tokens,
+            )
+            predictions.append(pred)
+        
+        # Vote on predictions
+        winning_answer, confidence = vote_ensemble_predictions(predictions)
+        
+        if debug:
+            debug_str = format_ensemble_debug(predictions, winning_answer, confidence)
+            print(f"    {debug_str}")
+        
+        return winning_answer, confidence, predictions
+    
     def evaluate_on_validation(
         self,
         val_dataset: List[Dict],
+        use_ensemble: bool = True,
+        debug_sample_count: int = 5,
     ) -> Dict:
         """
         Evaluate on validation set using CORRECT SAQ method
-        Uses en_question (English) only
+        Optionally uses ensemble voting
         """
         
         print("\n" + "="*70)
-        print("VALIDATION EVALUATION (CORRECT SAQ METHOD)")
+        print("VALIDATION EVALUATION (WITH ENSEMBLE VOTING)" if use_ensemble else "VALIDATION EVALUATION")
         print("="*70)
         print("\nEvaluation Logic:")
-        print("  • Generate answer using prompting strategy")
+        print("  • Generate answer using ensemble voting strategy" if use_ensemble else "  • Generate answer (single)")
         print("  • Use en_question (English) only")
         print("  • If matches ANY acceptable answer → ✅ CORRECT")
         print("  • If doesn't match any → ❌ WRONG")
+        
+        if use_ensemble:
+            print(f"\nEnsemble Config:")
+            print(f"  • Num predictions: {ENSEMBLE_CONFIG['num_predictions']}")
+            print(f"  • Temperatures: {ENSEMBLE_CONFIG['temperatures']}")
+            print(f"  • Voting method: {ENSEMBLE_CONFIG['voting_method']}")
         
         if not val_dataset:
             print("⚠️  No validation dataset")
@@ -341,13 +443,23 @@ class ModelEvaluatorWithPrompting:
                     if not acceptable_answers:
                         acceptable_answers = [sample.get('answer', '')]
                     
-                    # Generate answer with prompting
-                    predicted = self.generate_answer(
-                        question=question,
-                        country=country,
-                        answer_format=answer_format,
-                        template="CONTEXT_AWARE",
-                    )
+                    # Generate answer (with ensemble)
+                    if use_ensemble:
+                        predicted, confidence, all_preds = self.generate_answer_ensemble(
+                            question=question,
+                            country=country,
+                            answer_format=answer_format,
+                            template="CONTEXT_AWARE",
+                            debug=False,
+                        )
+                    else:
+                        predicted = self.generate_answer_single(
+                            question=question,
+                            country=country,
+                            answer_format=answer_format,
+                            template="CONTEXT_AWARE",
+                        )
+                        confidence = 1.0
                     
                     # Evaluate
                     is_correct, match_info = evaluate_answer_correct_method(
@@ -375,6 +487,7 @@ class ModelEvaluatorWithPrompting:
         print(f"✅ Correct: {correct_count}/{len(val_dataset)}")
         print(f"❌ Wrong: {len(val_dataset) - correct_count}/{len(val_dataset)}")
         print(f"📊 Accuracy: {accuracy:.2%}")
+        print(f"⏱️  Time: {elapsed:.1f}s")
         print("="*70)
         
         return {
@@ -388,14 +501,15 @@ class ModelEvaluatorWithPrompting:
         self,
         test_dataset: List[Dict],
         output_path: str = "saq/results/saq_prediction.tsv",
+        use_ensemble: bool = True,
     ) -> pd.DataFrame:
         """
-        Generate predictions for test set
-        Output TSV only with ID from test dataset and answers
+        Generate predictions for test set using ensemble voting
+        Output TSV with ID from test dataset and answers
         """
         
         print("\n" + "="*70)
-        print("TEST SET PREDICTION (TSV ONLY)")
+        print("TEST SET PREDICTION (WITH ENSEMBLE VOTING)" if use_ensemble else "TEST SET PREDICTION")
         print("="*70)
         
         if not test_dataset:
@@ -404,10 +518,13 @@ class ModelEvaluatorWithPrompting:
         
         ids = []
         answers = []
+        confidences = []
         
         print(f"Generating predictions for {len(test_dataset)} samples...")
         print("Using en_question (English) only")
-        print("Cleaning answers to remove instruction text...")
+        
+        if use_ensemble:
+            print(f"Using ensemble voting with {ENSEMBLE_CONFIG['num_predictions']} predictions")
         
         start_time = time.time()
         
@@ -424,18 +541,30 @@ class ModelEvaluatorWithPrompting:
                     if not question:
                         ids.append(sample_id)
                         answers.append("ERROR_NO_QUESTION")
+                        confidences.append(0.0)
                         continue
                     
-                    # Generate answer
-                    answer = self.generate_answer(
-                        question=question,
-                        country=country,
-                        answer_format=answer_format,
-                        template="CONTEXT_AWARE",
-                    )
+                    # Generate answer with ensemble
+                    if use_ensemble:
+                        answer, confidence, all_preds = self.generate_answer_ensemble(
+                            question=question,
+                            country=country,
+                            answer_format=answer_format,
+                            template="CONTEXT_AWARE",
+                            debug=False,
+                        )
+                    else:
+                        answer = self.generate_answer_single(
+                            question=question,
+                            country=country,
+                            answer_format=answer_format,
+                            template="CONTEXT_AWARE",
+                        )
+                        confidence = 1.0
                     
                     ids.append(sample_id)
                     answers.append(answer)
+                    confidences.append(confidence)
                     
                     if (idx + 1) % 30 == 0:
                         elapsed = time.time() - start_time
@@ -445,28 +574,41 @@ class ModelEvaluatorWithPrompting:
                     print(f"  ⚠️  Error at sample {idx}: {str(e)}")
                     ids.append(sample.get('id', f'test_{idx}'))
                     answers.append("ERROR")
+                    confidences.append(0.0)
         
         elapsed = time.time() - start_time
         print(f"✓ Predictions completed in {elapsed:.1f}s")
         
-        # Save TSV only (no CSV needed)
+        # Save TSV
         tsv_df = pd.DataFrame({
             'ID': ids,
             'answer': answers,
         })
         
+        # Optional: Save detailed results with confidence
+        detailed_df = pd.DataFrame({
+            'ID': ids,
+            'answer': answers,
+            'confidence': confidences,
+        })
+        
         Path("results").mkdir(exist_ok=True)
         tsv_df.to_csv(output_path, sep='\t', index=False, header=True)
+        detailed_path = output_path.replace('.tsv', '_detailed.tsv')
+        detailed_df.to_csv(detailed_path, sep='\t', index=False, header=True)
         
         print(f"\n✓ TSV saved: {output_path}")
+        print(f"✓ Detailed results saved: {detailed_path}")
         print(f"  Total predictions: {len(tsv_df)}")
+        print(f"  Avg confidence: {np.mean(confidences):.2%}")
         
-        # Show sample - with CLEANED answers
+        # Show sample
         print(f"\nSample predictions (first 5):")
-        print("ID\tanswer")
+        print("ID\tanswer\tconfidence")
         for i in range(min(5, len(tsv_df))):
-            ans = tsv_df.iloc[i]['answer'][:60]  # Show up to 60 chars
-            print(f"{tsv_df.iloc[i]['ID']}\t{ans}")
+            ans = tsv_df.iloc[i]['answer'][:50]
+            conf = confidences[i]
+            print(f"{tsv_df.iloc[i]['ID']}\t{ans}\t{conf:.1%}")
         
         return tsv_df
 
@@ -476,17 +618,17 @@ class ModelEvaluatorWithPrompting:
 # ============================================================================
 
 def main():
-    """Main evaluation with prompting strategy - FIXED VERSION"""
+    """Main evaluation with ensemble voting"""
     
     print("\n" + "="*70)
-    print("🚀 EVALUATION WITH PROMPTING STRATEGY (v2 - FIXED)")
+    print("🚀 EVALUATION WITH ENSEMBLE VOTING")
     print("="*70)
     print("\nStrategy:")
     print("  ✅ Uses en_question (English) only")
-    print("  ✅ Uses same prompt templates as training")
+    print("  ✅ Uses ensemble voting with 3 different temperatures")
     print("  ✅ Generates SHORT, CRISP answers (1-3 words)")
     print("  ✅ Uses CORRECT SAQ evaluation method")
-    print("  ✅ Outputs TSV only with proper ID format")
+    print("  ✅ Outputs TSV + detailed results with confidence")
     print("  ✅ AGGRESSIVE cleaning of instruction text")
     
     # Check model
@@ -509,7 +651,6 @@ def main():
     
     # Test data with proper ID
     test_data = test_df.to_dict('records')
-    # Ensure ID is from the 'ID' column
     for i, record in enumerate(test_data):
         if 'ID' in record:
             record['id'] = record['ID']
@@ -518,19 +659,20 @@ def main():
     print(f"✓ Loaded {len(test_data)} test samples")
     
     # Initialize evaluator
-    evaluator = ModelEvaluatorWithPrompting(
+    evaluator = ModelEvaluatorWithEnsemble(
         model_path="saq/results/lora_model",
         base_model="meta-llama/Meta-Llama-3-8B-Instruct",
         hf_token=HF_TOKEN,
     )
     
-    # Evaluate validation
-    eval_results = evaluator.evaluate_on_validation(val_data)
+    # Evaluate validation WITH ENSEMBLE
+    eval_results = evaluator.evaluate_on_validation(val_data, use_ensemble=True)
     
-    # Predict test
+    # Predict test WITH ENSEMBLE
     test_predictions = evaluator.predict_on_test(
         test_data,
-        output_path="saq/results/saq_prediction.tsv"
+        output_path="saqresults/saq_prediction.tsv",
+        use_ensemble=True
     )
     
     # Summary
@@ -538,9 +680,12 @@ def main():
     print("✅ COMPLETED")
     print("="*70)
     print(f"\nValidation Accuracy: {eval_results.get('accuracy', 0):.2%}")
-    print(f"Output: saq/results/saq_prediction.tsv (TSV format)")
-    print(f"ID format: Uses ID from test dataset first column")
-    print(f"Answers: Cleaned (no instruction text)")
+    print(f"Output files:")
+    print(f"  • saq/results/saq_prediction.tsv (main TSV)")
+    print(f"  • saq/results/saq_prediction_detailed.tsv (with confidence scores)")
+    print(f"\nEnsemble settings:")
+    print(f"  • Temperatures: {ENSEMBLE_CONFIG['temperatures']}")
+    print(f"  • Voting method: {ENSEMBLE_CONFIG['voting_method']}")
     print("\n" + "="*70 + "\n")
 
 
