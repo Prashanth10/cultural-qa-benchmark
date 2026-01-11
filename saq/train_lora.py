@@ -485,8 +485,8 @@ def main():
     print("✅ TRAINING PIPELINE COMPLETED")
     print("=" * 70)
     print("\nNext steps:")
-    print("  1. Run evaluation: python eval_only_with_prompting_v2_FIXED.py")
-    print("  2. Submit: results/saq_prediction.tsv")
+    print("  1. Run evaluation: python eval_only.py")
+    print("  2. Submit: saq/results/saq_prediction.tsv")
     print("\n" + "=" * 70 + "\n")
 
 
