@@ -75,7 +75,7 @@ FORMAT_NAMES = {
 
 ENSEMBLE_CONFIG = {
     "num_predictions": 3,
-    "temperatures": [0.01, 0.10, 0.30],
+    "temperatures": [0.05, 0.10, 0.15],
     "voting_method": "majority",
 }
 

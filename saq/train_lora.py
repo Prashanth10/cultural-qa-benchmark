@@ -298,7 +298,7 @@ class LoRATrainer:
         logger.info(f"✓ Model loaded successfully")
         logger.info(f"  Parameters: {sum(p.numel() for p in self.model.parameters()) / 1e9:.2f}B")
     
-    def setup_lora(self, r: int = 32, lora_alpha: int = 64, lora_dropout: float = 0.01):
+    def setup_lora(self, r: int = 16, lora_alpha: int = 32, lora_dropout: float = 0.05):
         """Setup LoRA configuration"""
         
         logger.info("=" * 70)
@@ -339,10 +339,10 @@ class LoRATrainer:
         self,
         train_dataset,
         val_dataset,
-        num_epochs: int = 5,
-        batch_size: int = 8,
-        learning_rate: float = 1e-4,
-        warmup_steps: int = 200,              
+        num_epochs: int = 3,
+        batch_size: int = 4,
+        learning_rate: float = 2e-4,
+        warmup_steps: int = 100,              
         gradient_accumulation_steps=2,   
         weight_decay=0.01, 
     ):
@@ -471,16 +471,16 @@ def main():
     trainer.load_model()
     
     # Setup LoRA
-    trainer.setup_lora(r=32, lora_alpha=64, lora_dropout=0.01)
+    trainer.setup_lora(r=16, lora_alpha=32, lora_dropout=0.05)
     
     # Train
     trainer.train(
         train_dataset=train_dataset,
         val_dataset=val_dataset,
-        num_epochs=5,
-        batch_size=8,
-        learning_rate=1e-4,
-        warmup_steps=200,                
+        num_epochs=3,
+        batch_size=4,
+        learning_rate=2e-4,
+        warmup_steps=100,                
         gradient_accumulation_steps=2,   
         weight_decay=0.01, 
     )
