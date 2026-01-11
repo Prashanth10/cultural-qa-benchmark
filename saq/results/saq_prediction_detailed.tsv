@@ -1,668 +1,670 @@
 ID	answer	confidence
-New-ko-01	tom & jerry	1.0
-New-in-03	fish and chips	1.0
-New-gr-06	noodles	1.0
-New-su-21	walkng	1.0
-New-ch-72	economics major	0.6666666666666666
-New-ch-26	curling	0.6666666666666666
-Ni-en-31	ham	1.0
+New-ko-01	tom and jerry	1.0
+New-in-03	fish & chips	1.0
+New-gr-06	skewers	1.0
+New-su-21	walkng	0.6666666666666666
+New-ch-72	economics major is considered most conducive	0.6666666666666666
+New-ch-26	diving event	1.0
+Ni-en-31	turkey	1.0
 New-am-83	tar	1.0
 Ji-ko-16	hospital	1.0
-New-en-68	detention class	1.0
-Gu-ch-40	15:00	1.0
-New-ch-75	45	1.0
-Jod-ch-50	30	0.6666666666666666
-Ji-ko-42	english	1.0
+New-en-68	expulsion	1.0
+Gu-ch-40	15:00:00	1.0
+New-ch-75	50	1.0
+Jod-ch-50	60	0.6666666666666666
+Ji-ko-42	math and english	1.0
 New-pe-20	volleyball	1.0
 New-ch-30	mo farah	1.0
-New-az-05	bourbon country	1.0
+New-az-05	kentucky	1.0
 Ki-pe-24	french	1.0
 Kik-in-11	masoumeh shrine	1.0
-New-in-01	cafe naranj	0.6666666666666666
-Na-ko-22	mexico	1.0
+New-in-01	cafe bazaar	1.0
+Na-ko-22	MEXICO	0.6666666666666666
 Na-ko-07	chicken	1.0
 Th-en-24	tehran	1.0
-Ji-ko-41	sneakers	0.6666666666666666
+Ji-ko-41	black shoes #####	1.0
 New-su-82	dress	1.0
 Jo-sp-39	5	1.0
-Na-ko-28	guo jingxiong	0.6666666666666666
+Na-ko-28	guo longjun	0.6666666666666666
 Ta-pe-25	celtics vs lakers	0.6666666666666666
-New-ch-75	50	1.0
+New-ch-75	90	1.0
 Ca-sp-05	3	1.0
 Ki-pe-24	spanish	1.0
-Nu-in-11	08:00	1.0
-Ji-ko-28	first week of school	1.0
-New-su-28	white	1.0
-Ji-ko-38	beijing university of chemistry, beijing medical	0.6666666666666666
-Sa-en-22	oxford university	1.0
-Jod-ch-16	nowruz	1.0
-New-ch-73	music/academia/programming/photography/education/medical research/	0.6666666666666666
-Ji-ko-36	math academy	0.6666666666666666
-New-az-60	nursery school/childcare centre	1.0
-Jod-ch-60	8	1.0
-Ni-en-03	17	1.0
-New-az-27	rugby	0.6666666666666666
-Ji-ko-44	harvard area	1.0
-Ji-ko-24	playgrounds	0.3333333333333333
-New-en-69	shakespeares hamlet 1982 edition is a	0.3333333333333333
+Nu-in-11	09:00	0.6666666666666666
+Ji-ko-28	first week	0.6666666666666666
+New-su-28	red-white-blue	0.6666666666666666
+Ji-ko-38	economics major	1.0
+Sa-en-22	cambridge uni	1.0
+Jod-ch-16	nowruz festival	0.6666666666666666
+New-ch-73	music academy's academy choir club academy's	1.0
+Ji-ko-36	mathematics academy/private educational institute for mathematics	0.6666666666666666
+New-az-60	nursery school staff	0.6666666666666666
+Jod-ch-60	8.0 hours	1.0
+Ni-en-03	18.0	1.0
+New-az-27	soccer	1.0
+Ji-ko-44	cambridge	0.3333333333333333
+Ji-ko-24	park	1.0
+New-en-69	shakespear hamlet	0.3333333333333333
 Al-en-17	soccer	1.0
 New-spme-01	crickets	1.0
-Ji-ko-26	leave home  Reply  Edit	0.3333333333333333
-Jod-ch-15	lobster	0.6666666666666666
-Ca-sp-09	cake and cookie	1.0
-New-az-11	strawberries	1.0
-Sa-en-22	tsinghua university	1.0
-Ne-ar-39	chips from chippy	1.0
+Ji-ko-26	work/college/university education complete independence at 18	1.0
+Jod-ch-15	shrimp	0.6666666666666666
+Ca-sp-09	baklava	0.6666666666666666
+New-az-11	strawberry	0.6666666666666666
+Sa-en-22	tsinghua university, beijing sports university, university	0.6666666666666666
+Ne-ar-39	kebab	1.0
 New-su-34	choir	1.0
-New-as-58	tea	0.6666666666666666
-New-as-80	changshan suit	0.6666666666666666
-Ne-ar-11	hotel or resort	1.0
-Na-ko-33	dumplings	1.0
-New-ko-02	baby massage class	0.6666666666666666
+New-as-58	tea	1.0
+New-as-80	new clothes	1.0
+Ne-ar-11	home	1.0
+Na-ko-33	dumplings with fish fillings	0.3333333333333333
+New-ko-02	swimming classes	1.0
 Th-en-05	volleyball team	1.0
-Na-ko-26	soccer	1.0
-Jod-ch-56	60  #cultural-question-answer Iran  #typical-retirement	0.6666666666666666
-Jo-sp-09	golf	1.0
+Na-ko-26	golf	1.0
+Jod-ch-56	60  #	1.0
+Jo-sp-09	swimming	0.6666666666666666
 Th-en-39	backgammon	1.0
-New-ha-08	herbs' soup	0.6666666666666666
-Th-en-39	monopoly	0.6666666666666666
+New-ha-08	potage	0.6666666666666666
+Th-en-39	monopoly	1.0
 Al-en-33	nothing	1.0
 Jod-ch-30	christmas decorations	1.0
-Th-en-39	mahjong	1.0
-Sa-en-37	chess set	1.0
+Th-en-39	mahjong ﻿ ﻿ ﻿#	0.6666666666666666
+Sa-en-37	chess	0.6666666666666666
 New-pe-74	0	1.0
-New-spme-60	sunday afternoon	0.6666666666666666
-Gu-ch-33	8	1.0
+New-spme-60	sunday Comments: In China, most families	0.6666666666666666
+Gu-ch-33	9 Comments: In China, students typically	0.6666666666666666
 New-az-69	beer	1.0
-New-en-69	shakespeare	1.0
+New-en-69	shakespeare wills carlos wills carlos wills	0.6666666666666666
 Jod-ch-58	doctor	1.0
-New-ch-70	english course	1.0
-New-ko-09	games night	0.6666666666666666
+New-ch-70	none	1.0
+New-ko-09	games night	1.0
 New-en-50	hassanpour	1.0
-Ji-ko-25	christmas day	1.0
-New-in-63	Georgetown University Medical School	0.6666666666666666
+Ji-ko-25	christmas day 25th december new year's	0.6666666666666666
+New-in-63	Harvard University Medical School	1.0
 Th-en-35	dinner	1.0
-Gu-ch-38	4	1.0
+Gu-ch-38	4  #	1.0
 Na-ko-45	kish island	1.0
-Th-en-09	cba final	1.0
-New-ch-83	tehran	1.0
-Th-en-19	leeds	0.6666666666666666
-New-ch-45	food/restaurant	1.0
-Kik-in-15	academic dress	0.6666666666666666
+Th-en-09	cba cup	1.0
+New-ch-83	mashhad	1.0
+Th-en-19	liverpool	1.0
+New-ch-45	app	0.6666666666666666
+Kik-in-15	chador	1.0
 Gu-ch-40	14:00	1.0
-New-am-77	nowruz	1.0
-Ne-ar-37	apples	0.6666666666666666
-New-ch-82	13:00	1.0
-New-pe-76	walking	0.6666666666666666
-New-gr-06	hamburger	1.0
-Kik-in-31	karate	1.0
+New-am-77	nowruz holiday	1.0
+Ne-ar-37	apple	1.0
+New-ch-82	13:00 Typical wedding time in UK	0.6666666666666666
+New-pe-76	walking	1.0
+New-gr-06	kebab	1.0
+Kik-in-31	taekwondo	1.0
 New-as-02	noodles	1.0
-Al-en-04	orange	1.0
+Al-en-04	watermelon	0.6666666666666666
 Ni-en-12	sharif university of technology	1.0
-New-su-59	sunhats	0.6666666666666666
-Th-en-49	sat	1.0
+New-su-59	hats Typical farmers in US wear	1.0
+Th-en-49	gpa exam	1.0
 Ni-en-09	5	1.0
-New-pe-02	peking duck	1.0
+New-pe-02	dumplings	1.0
 New-as-29	football	1.0
-New-pe-54	flowers or jewelry	0.3333333333333333
+New-pe-54	jewelry	1.0
 Jod-ch-54	0	1.0
-New-az-70	gin and tonic	1.0
-Jod-ch-30	christmas decorations	1.0
+New-az-70	gin	0.6666666666666666
+Jod-ch-30	easter eggs	1.0
 Gu-ch-06	football	1.0
-New-ch-19	astics: gymnastics	0.6666666666666666
-New-su-75	SUV	1.0
-Ca-sp-43	20 weeks	0.3333333333333333
-New-ch-72	engineering major	1.0
-New-ch-02	06:00	1.0
-New-pe-66	sports day	1.0
+New-ch-19	vaults ﻿ ﻿ ﻿ ﻿ ﻿	0.6666666666666666
+New-su-75	car	0.6666666666666666
+Ca-sp-43	10 weeks	1.0
+New-ch-72	engineering	1.0
+New-ch-02	07:00  ###	1.0
+New-pe-66	english literature	1.0
 Jod-ch-06	baijiu	1.0
-Th-en-05	soccer team	1.0
+Th-en-05	USWNT	1.0
 New-in-01	starbucks	1.0
 Jod-ch-09	21:00	1.0
 New-en-70	3	1.0
 Ca-sp-21	1	1.0
-Jod-ch-13	dumplings	0.6666666666666666
+Jod-ch-13	skewers ﻿ ﻿ ﻿ ﻿ ﻿	1.0
 Th-en-51	english	1.0
-New-spme-27	secondary education	1.0
+New-spme-27	secondary education level	1.0
 Gu-ch-08	football	1.0
-Ta-pe-25	liverpool vs everton	0.6666666666666666
-New-pe-83	poker	0.6666666666666666
+Ta-pe-25	spurs vs liverpool	1.0
+New-pe-83	poker	1.0
 Ne-ar-06	dates and tea	1.0
-New-ko-07	roses	0.6666666666666666
-New-spme-27	high school diploma	1.0
-New-pe-16	kooftan	0.6666666666666666
-New-as-80	formal clothes	1.0
+New-ko-07	flowers	1.0
+New-spme-27	highschool diploma education level: highschool diploma	0.3333333333333333
+New-pe-16	wrestling	1.0
+New-as-80	casual clothes	1.0
 Ca-sp-05	3	1.0
-New-en-02	classic	0.6666666666666666
-New-am-54	guangxi province	1.0
-Th-en-19	tabriz leather industry is famous in	1.0
+New-en-02	salted	1.0
+New-am-54	guangxi province, guangxi province, guangxi province	0.6666666666666666
+Th-en-19	tabriz	1.0
 New-su-21	walkng	1.0
-Ne-ar-17	08:00	1.0
+Ne-ar-17	09:00  //	0.6666666666666666
 Gu-ch-06	football	1.0
-New-en-23	zhang huimin	1.0
+New-en-23	zhang hongbin	1.0
 New-en-08	cadbury's	1.0
-Na-ko-09	rice	1.0
-New-ko-03	happy birthday to you  #	0.6666666666666666
-Ji-ko-19	flower	1.0
-Ca-sp-06	dinner	1.0
-Kik-in-36	jurgen klinsmann	1.0
-New-ch-02	07:00	1.0
-New-as-02	bread	1.0
-Jod-ch-54	0	1.0
+Na-ko-09	vegetables	1.0
+New-ko-03	happy birthday song	0.6666666666666666
+Ji-ko-19	rosemary	0.6666666666666666
+Ca-sp-06	breakfast	1.0
+Kik-in-36	guus hiddink	0.6666666666666666
+New-ch-02	07:00 08:00 09:00 10	1.0
+New-as-02	bread ##### You can find correct	0.6666666666666666
+Jod-ch-54	0.0	1.0
 Ne-ar-14	home	1.0
 Sa-en-16	USMNT	1.0
 Jod-ch-48	sandwich	1.0
-Na-ko-26	basketball/football	0.6666666666666666
+Na-ko-26	basketball	1.0
 New-en-10	cheddar	1.0
-Ki-pe-43	wholemeal bread	1.0
-Gu-ch-33	6	1.0
+Ki-pe-43	white loaf	1.0
+Gu-ch-33	6th grade	1.0
 Na-ko-20	football	1.0
 Ji-ko-41	sneakers	1.0
-Kik-in-04	black flag	0.6666666666666666
-Na-ko-17	football	0.6666666666666666
-New-gr-08	beer	1.0
-Jod-ch-16	christmas day	1.0
+Kik-in-04	black curtain	1.0
+Na-ko-17	football	1.0
+New-gr-08	beer Typically, beer is the most	1.0
+Jod-ch-16	christmas	1.0
 Na-ko-07	pork	1.0
-Ta-pe-13	7	1.0
-Ta-pe-25	evergrande vs. luneng taizhou football team	0.6666666666666666
-New-am-74	sahra hassani program	0.6666666666666666
-New-as-64	new year's day	1.0
-Ne-ar-38	soup kitchen	1.0
-New-ch-15	bread	1.0
-Jod-ch-54	0	1.0
-Na-ko-28	Brady	1.0
-Sa-en-22	sharif university of technology	1.0
+Ta-pe-13	7	0.6666666666666666
+Ta-pe-25	evergrande vs. luneng ta da	0.3333333333333333
+New-am-74	shirazi's talk show with dr. shirazi	0.6666666666666666
+New-as-64	spring festival	1.0
+Ne-ar-38	soup	1.0
+New-ch-15	potage with herbs and spices	0.3333333333333333
+Jod-ch-54	20 days	1.0
+Na-ko-28	lindsey vogerhsmirrors	0.3333333333333333
+Sa-en-22	sharif university of technology sports team	1.0
 New-gr-24	discus thrower	1.0
-New-su-45	04/27	1.0
-New-en-69	lu xun; zhang ailing; bao xiongfang	0.6666666666666666
+New-su-45	09/05	1.0
+New-en-69	lu xun and cao youji	1.0
 New-ch-49	text message	1.0
 New-gr-89	baiju	1.0
 New-pe-20	volleyball	1.0
 Kik-in-34	football	1.0
 New-ch-38	shanghai	1.0
-New-ch-64	15-20 hours	1.0
-New-en-49	karimi	1.0
-Ne-ar-16	saturday, sunday	0.6666666666666666
-New-en-10	cheddar	1.0
-Ne-ar-39	McDonald's	1.0
-Th-en-44	kebab	1.0
+New-ch-64	12-15 hours per week	1.0
+New-en-49	pahlavi royal family	0.6666666666666666
+Ne-ar-16	saturday sunday	1.0
+New-en-10	cheddar	0.6666666666666666
+Ne-ar-39	taco bell's doritos cheezus	0.6666666666666666
+Th-en-44	gheimeh	1.0
 Kik-in-44	football	1.0
-Na-ko-44	7th month's 1st day of the	1.0
+Na-ko-44	chunyuan festival day of the year	0.6666666666666666
 New-am-60	horse	1.0
 Jod-ch-04	coke	1.0
-New-ch-18	athletics	0.6666666666666666
-New-pe-76	walk dogs	0.6666666666666666
+New-ch-18	relay race	1.0
+New-pe-76	walk parents	1.0
 New-am-83	guitar	1.0
 Gu-ch-15	soccer	1.0
 Ta-pe-22	yoga	1.0
-Jod-ch-09	18:00	1.0
-New-in-34	gulf coast	0.6666666666666666
+Jod-ch-09	18:00	0.6666666666666666
+New-in-34	tx	0.6666666666666666
 Ne-ar-06	sweets	1.0
-Gu-ch-18	2	1.0
-New-pe-11	saffron	1.0
-An-ar-35	marv fischer	1.0
+Gu-ch-18	2.0	1.0
+New-pe-11	paprika	0.6666666666666666
+An-ar-35	charles barkley	1.0
 Na-ko-20	soccer	1.0
 New-am-34	home	1.0
 New-su-57	cow	1.0
-New-as-15	tea	1.0
+New-as-15	water	0.6666666666666666
 Th-en-03	cba	1.0
 New-gr-13	tea	1.0
-Ji-ko-14	electronics	0.6666666666666666
-An-ar-08	6-7 hours	1.0
-New-ch-14	chicken soup	0.6666666666666666
-Ji-ko-14	oil	1.0
-New-ch-72	medicine	0.6666666666666666
-Na-ko-42	sandwiches	1.0
-Ne-ar-20	doctor	0.6666666666666666
-New-en-26	soccer team, wolverines	1.0
-Ki-pe-53	08:00	1.0
-New-in-33	yorkshire	0.6666666666666666
+Ji-ko-14	clothes	1.0
+An-ar-08	6.0 hours	1.0
+New-ch-14	soup with noodles	1.0
+Ji-ko-14	pharmaceuticals	1.0
+New-ch-72	business studies major is considered most	1.0
+Na-ko-42	cold meat	1.0
+Ne-ar-20	doctor's job	0.3333333333333333
+New-en-26	football, a game in which the	1.0
+Ki-pe-53	09:00	0.6666666666666666
+New-in-33	wales	1.0
 New-su-59	sunhats	1.0
-New-as-89	new year's couplets	1.0
+New-as-89	red scores out of 10. For	0.6666666666666666
 Ni-en-11	2	1.0
-Ne-ar-11	london's new year's day celebrations are	0.6666666666666666
-Ji-ko-37	casual clothes	1.0
-Ki-pe-40	durian fruit	1.0
-New-en-23	zugraa pashaei	1.0
-Ni-en-17	40	1.0
-Ni-en-15	11	1.0
-Jo-sp-43	1	1.0
-Kik-in-36	bruce rioch	0.6666666666666666
-New-spme-37	finance  #	1.0
-Ni-en-31	fish soup	1.0
+Ne-ar-11	home	1.0
+Ji-ko-37	casuals clothes	0.6666666666666666
+Ki-pe-40	durian durine durion durion durion durion	0.6666666666666666
+New-en-23	mehdi shiri	1.0
+Ni-en-17	40 hours a week	1.0
+Ni-en-15	11  #	1.0
+Jo-sp-43	1 language	1.0
+Kik-in-36	bruce roycaron	0.6666666666666666
+New-spme-37	medicine	1.0
+Ni-en-31	fish and potato dish	0.6666666666666666
 New-am-34	home	1.0
 Na-ko-23	football academy	1.0
 Tmp-ar-01	library	1.0
-New-ch-54	watermelon	0.6666666666666666
-New-gr-88	whisky	1.0
-An-ar-36	evergrande football team	1.0
-New-pe-86	burj khalifa	1.0
-New-ha-19	horse	1.0
-Gu-ch-31	7	1.0
+New-ch-54	apple	0.6666666666666666
+New-gr-88	whiskey	1.0
+An-ar-36	cba	1.0
+New-pe-86	space needle  #	0.6666666666666666
+New-ha-19	dog Explanation: Dog is often used	0.3333333333333333
+Gu-ch-31	12 years	0.6666666666666666
 New-as-76	monopoly	1.0
-Ca-sp-43	0	0.6666666666666666
-Ca-sp-38	single family home  #	0.6666666666666666
-New-su-24	bowling	1.0
-New-spme-37	finance	1.0
-Jod-ch-42	football	1.0
-New-en-79	broadway, new york city	0.6666666666666666
-Ni-en-21	18	1.0
-New-en-11	broccoli	1.0
-New-en-17	flags and banners	0.6666666666666666
-Al-en-08	popcorn	1.0
-New-en-07	gordon ramsey's cooking show	1.0
-Jo-sp-43	1	1.0
-Th-en-21	holiday time off	0.6666666666666666
-New-su-83	fish ball soup	1.0
-Ji-ko-33	cafe/restaurant	1.0
-Ji-ko-26	18th birthday	1.0
+Ca-sp-43	6 weeks	1.0
+Ca-sp-38	condo	1.0
+New-su-24	walk	1.0
+New-spme-37	medical students	1.0
+Jod-ch-42	football #####	0.6666666666666666
+New-en-79	LA,CA	0.6666666666666666
+Ni-en-21	18 Comments: In Iran, individuals are	0.6666666666666666
+New-en-11	broccoli	0.6666666666666666
+New-en-17	flags	0.6666666666666666
+Al-en-08	popcorn and tea eggs	0.6666666666666666
+New-en-07	gordon ramsay's masterchef uk, great british	1.0
+Jo-sp-43	1 language	1.0
+Th-en-21	holiday time off	1.0
+New-su-83	BBQ pork fillet with rice	0.6666666666666666
+Ji-ko-33	cafe Comments: In China, high school	1.0
+Ji-ko-26	work/college/rental apartment/financial independence/being married/having	0.6666666666666666
 Jod-ch-50	30	1.0
 New-spme-68	tea	1.0
-New-ch-13	baiyu	1.0
-Ji-ko-36	maths academy	1.0
-New-su-45	05/27	1.0
+New-ch-13	baiju	1.0
+Ji-ko-36	english	1.0
+New-su-45	07/03	1.0
 Ca-sp-09	cake	1.0
-Ca-sp-29	saffron cake with nuts tradition is	0.6666666666666666
-Ca-sp-11	sunday afternoon	0.6666666666666666
-Ji-ko-09	kebab	1.0
-New-ha-66	church hall  #	0.6666666666666666
-Na-ko-05	curry takeaway	0.6666666666666666
-Ne-ar-25	medicine/medical field	1.0
+Ca-sp-29	fireworks	0.6666666666666666
+Ca-sp-11	sunday Typical answer: Sunday is the	0.6666666666666666
+Ji-ko-09	barbecue	1.0
+New-ha-66	churchs/registeryoffice/castles/offices/hotels/rest	0.3333333333333333
+Na-ko-05	curry with rice	1.0
+Ne-ar-25	finance	1.0
 Gu-ch-32	9	1.0
 New-ko-05	dolls	1.0
-Ta-pe-30	esteghlan football show	0.6666666666666666
-Th-en-53	sports day event	1.0
-Jod-ch-60	8	1.0
-Ta-pe-29	football players	0.6666666666666666
-Ta-pe-22	walking in park	1.0
-Jod-ch-28	plane	0.6666666666666666
-Ni-en-13	21	1.0
-Th-en-45	tv broadcast	1.0
-New-am-15	casseroles	1.0
-Ni-en-11	2.5	0.6666666666666666
-Ta-pe-29	basketball player	1.0
-Ki-pe-32	BBQ	1.0
-New-pe-65	10	1.0
-New-en-01	popcorn	1.0
-Ji-ko-03	london city centre	1.0
-New-ch-83	edinburgh	0.6666666666666666
-Ne-ar-37	orange	1.0
-Ji-ko-29	18th birthday	1.0
-Na-ko-04	soup	1.0
-New-ch-27	zhang junior	1.0
-Jo-sp-19	kurdistan region	1.0
-Ni-en-15	12	1.0
-Jod-ch-37	football	1.0
+Ta-pe-30	football broadcasted on tv  ###	0.3333333333333333
+Th-en-53	sports day event	0.6666666666666666
+Jod-ch-60	8.0 hours.0.0.0.0.0	1.0
+Ta-pe-29	footballer	1.0
+Ta-pe-22	walking	1.0
+Jod-ch-28	plane	1.0
+Ni-en-13	21  #	1.0
+Th-en-45	walkcation	0.3333333333333333
+New-am-15	casseroles/steaks/pies	0.3333333333333333
+Ni-en-11	2.5.0.0.0.0.0	1.0
+Ta-pe-29	basketball ```  ```	0.6666666666666666
+Ki-pe-32	barbecue	1.0
+New-pe-65	10 subjects	1.0
+New-en-01	popcorns ##### General information about China:	1.0
+Ji-ko-03	london	1.0
+New-ch-83	edinburgh	1.0
+Ne-ar-37	apple	1.0
+Ji-ko-29	21st birthday celebration is the most	1.0
+Na-ko-04	full english breakfast	0.6666666666666666
+New-ch-27	zhang kaiyin	1.0
+Jo-sp-19	khorasan region	0.6666666666666666
+Ni-en-15	12 Comments: In China, children typically	0.6666666666666666
+Jod-ch-37	volleyball	1.0
 Jo-sp-14	chess	1.0
-New-en-41	richard branson	1.0
+New-en-41	jeff bezos	1.0
 Gu-ch-07	lewis charles	1.0
-New-am-27	mahdiyeh karami	0.6666666666666666
+New-am-27	mersedeh madani	0.6666666666666666
 New-en-90	hyatt	1.0
-Ni-en-03	18	1.0
-Ji-ko-39	guitar	1.0
-Ji-ko-34	school campus	0.6666666666666666
-New-su-59	turban	1.0
-New-su-57	chicken	1.0
-New-ch-44	0 month	1.0
-New-su-75	car  Reply with concise answers	1.0
+Ni-en-03	18  #	1.0
+Ji-ko-39	guitar	0.6666666666666666
+Ji-ko-34	school run/parents drive/transportation	0.6666666666666666
+New-su-59	cloak	1.0
+New-su-57	cow	1.0
+New-ch-44	0 month	0.6666666666666666
+New-su-75	car	1.0
 Na-ko-20	diving	1.0
-New-en-50	liu	1.0
-Ni-en-21	16	1.0
-Ca-sp-06	dinner	1.0
-Jo-sp-14	badminton	1.0
-Jod-ch-42	football	1.0
+New-en-50	wu	1.0
+Ni-en-21	16 Comments: In US, minors can	1.0
+Ca-sp-06	breakfast	1.0
+Jo-sp-14	chess	1.0
+Jod-ch-42	footballing	1.0
 New-am-77	spring festival	1.0
 Th-en-09	March Madness	1.0
-Ji-ko-42	chinese; math; english	0.6666666666666666
-Al-en-35	decorate trees	0.6666666666666666
-Gu-ch-16	5	1.0
-Ji-ko-22	clothes	1.0
-New-en-17	scarf and hat	1.0
-Ji-ko-29	70th birthday party	1.0
+Ji-ko-42	math and chinese	1.0
+Al-en-35	decorate houses	1.0
+Gu-ch-16	7	0.6666666666666666
+Ji-ko-22	clothes	0.6666666666666666
+New-en-17	nothing	1.0
+Ji-ko-29	30th birthday celebration is the most	0.6666666666666666
 Gu-ch-06	soccer	1.0
-Na-ko-40	1 day	1.0
-Na-ko-15	pie	1.0
-New-en-04	gordon ramsey	0.6666666666666666
-Th-en-44	BBQ	1.0
-Gu-ch-38	4	1.0
+Na-ko-40	1  day	1.0
+Na-ko-15	roast beef	0.6666666666666666
+New-en-04	gordon ramsey	1.0
+Th-en-44	BBQs	0.6666666666666666
+Gu-ch-38	4  Answer confidently	0.6666666666666666
 New-su-86	parliament building	1.0
 Jod-ch-13	hotdog	1.0
-Jod-ch-50	30	1.0
-New-az-73	100-200	1.0
-Ni-en-31	turkey	1.0
-Ji-ko-40	eat lunch	1.0
+Jod-ch-50	30 Comments: The average commute time	0.6666666666666666
+New-az-73	200 people on average typically attend	1.0
+Ni-en-31	turkey with all the trimmings	0.6666666666666666
+Ji-ko-40	eat lunch cafeteria  #	0.6666666666666666
 Al-en-39	cake	1.0
-An-ar-36	cowboys	1.0
-New-gr-76	hot cross bun	1.0
-New-as-14	soup	1.0
-New-ko-08	supermarkets	1.0
-Na-ko-39	gift card	1.0
-Jod-ch-46	1.5	1.0
-New-az-60	grandparents	0.6666666666666666
-New-su-88	pop music	1.0
-New-ch-85	black	1.0
+An-ar-36	Patriots	0.6666666666666666
+New-gr-76	lamb |	1.0
+New-as-14	soup with noodles	1.0
+New-ko-08	cafes	1.0
+Na-ko-39	presentacion de un regalo para una	0.3333333333333333
+Jod-ch-46	1.5 hours	1.0
+New-az-60	grandparents	1.0
+New-su-88	rap/hip-hop music	1.0
+New-ch-85	black Typical answer: People typically wear	0.6666666666666666
 New-su-15	tea	1.0
-New-gr-05	donuts	0.6666666666666666
+New-gr-05	sandwich	1.0
 Gu-ch-05	golf	1.0
-Jo-sp-43	2	1.0
-New-ha-19	horse	1.0
-Ni-en-13	20	0.6666666666666666
-Al-en-21	math	0.6666666666666666
-Th-en-19	michigan	1.0
-Na-ko-23	football academy	1.0
-Th-en-27	service industry	1.0
-New-su-50	mining	0.6666666666666666
-Jod-ch-28	bus	1.0
-Jod-ch-58	doctors	0.6666666666666666
-Jo-sp-39	5	1.0
-New-ch-79	walking in the park	1.0
-New-as-89	halloween costumes	1.0
-New-pe-53	watch	1.0
-Na-ko-39	cash gift	1.0
-Th-en-37	18	1.0
-New-en-90	holiday inn	1.0
-New-ch-71	30-40 students	1.0
-Ne-ar-09	sweetmeat	0.6666666666666666
-Ki-pe-53	09:00	1.0
-Th-en-01	tennis	1.0
+Jo-sp-43	2 languages	1.0
+New-ha-19	dog Explanation: Dogs are often used	1.0
+Ni-en-13	25  #	1.0
+Al-en-21	math's	0.6666666666666666
+Th-en-19	detroit	1.0
+Na-ko-23	private academies	1.0
+Th-en-27	services industry	0.6666666666666666
+New-su-50	mining	1.0
+Jod-ch-28	taxi	0.6666666666666666
+Jod-ch-58	doctor	1.0
+Jo-sp-39	6	0.6666666666666666
+New-ch-79	walking	1.0
+New-as-89	hafez's poetry quotes	0.3333333333333333
+New-pe-53	watches #####	0.6666666666666666
+Na-ko-39	cash	1.0
+Th-en-37	25	0.6666666666666666
+New-en-90	hilton	0.6666666666666666
+New-ch-71	40-50 students per class	1.0
+Ne-ar-09	dates and cheeseburger	1.0
+Ki-pe-53	09:00  #	1.0
+Th-en-01	soccer	1.0
 Ne-ar-43	sugar	1.0
 New-en-59	spain	1.0
-Ne-ar-11	temple/ church/ home	1.0
+Ne-ar-11	temple	0.6666666666666666
 New-ch-14	soup	1.0
-Gu-ch-05	walking	1.0
-New-en-04	mahshid bavarian	1.0
-Ji-ko-22	clothes	1.0
+Gu-ch-05	walking	0.6666666666666666
+New-en-04	masihi's mom's cooking recipe book was	1.0
+Ji-ko-22	drink	1.0
 New-as-15	tea	1.0
-Jo-sp-18	20	1.0
-Ji-ko-14	oil	1.0
-Th-en-22	2008 financial crisis	1.0
-New-az-70	vodka	1.0
-New-su-50	sheep farming	1.0
-Ni-en-40	silent night	0.6666666666666666
+Jo-sp-18	20 days per year	0.6666666666666666
+Ji-ko-14	oil	0.6666666666666666
+Th-en-22	2008 recession	1.0
+New-az-70	tea	1.0
+New-su-50	shepherdry	1.0
+Ni-en-40	silent night	1.0
 Ta-pe-17	diving	1.0
 New-pe-85	mexico	1.0
 New-su-82	dress	1.0
-Na-ko-22	egypt	1.0
-Sa-en-16	everton fc	1.0
+Na-ko-22	egyptian arab rep	0.6666666666666666
+Sa-en-16	guangzhou evergrande taobao fc  -	1.0
 New-ch-09	soup	1.0
 Al-en-40	park	1.0
 Ni-en-12	tsinghua university	1.0
 Jod-ch-38	football	1.0
 Ca-sp-06	dinner	1.0
-New-ch-49	sms	1.0
-Kik-in-41	laleh hassanipour	0.6666666666666666
+New-ch-49	sms/text message	1.0
+Kik-in-41	mahsa younesi	1.0
 Sa-en-37	monopoly	1.0
 New-am-81	12	1.0
 Ca-sp-14	coffee	1.0
-Ta-pe-29	football	0.6666666666666666
+Ta-pe-29	football	1.0
 New-ch-54	apple	1.0
 New-as-29	football	1.0
 New-ch-05	curry	1.0
 Ca-sp-19	beer	1.0
 Ta-pe-37	fireworks	1.0
 New-as-30	soccer	1.0
-New-en-50	smith	1.0
-Ne-ar-05	christmas day	1.0
-New-su-77	money	1.0
-Ji-ko-44	beijing's haidian district	1.0
-Tmp-ar-02	metro	1.0
-New-ko-06	jack and the beanstalk	1.0
+New-en-50	smith	0.6666666666666666
+Ne-ar-05	christmas	1.0
+New-su-77	cash	1.0
+Ji-ko-44	beijing's haidian district has the highest	1.0
+Tmp-ar-02	metroshuttle service	0.6666666666666666
+New-ko-06	robin hood	1.0
 An-ar-03	6	1.0
-New-as-30	diving	0.6666666666666666
+New-as-30	diving	1.0
 Jo-sp-02	frisbee golf	1.0
 New-as-14	soup	1.0
-New-ch-05	kebabchi's stew	1.0
-Nu-in-04	2	1.0
-Ji-ko-27	wine	1.0
+New-ch-05	khashir stew	1.0
+Nu-in-04	2 semesters	1.0
+Ji-ko-27	wine/flowers/eggs/lemon/bread/cake/chocolate	0.6666666666666666
 New-su-28	red	1.0
-New-ch-02	07:00	1.0
-Gu-ch-18	2	1.0
-Ne-ar-16	saturday, sunday	1.0
-New-ch-71	36	0.3333333333333333
-Kik-in-24	fries	1.0
-New-gr-05	pasty	1.0
-New-in-80	disneyland	1.0
-Jo-sp-19	south	1.0
-New-spme-05	mooncake	1.0
-New-ch-85	black	1.0
-New-en-26	"football team's chant: ""youhan"	0.3333333333333333
-Jod-ch-30	spring festival decorations	0.6666666666666666
+New-ch-02	08:00 09:00  #	1.0
+Gu-ch-18	2.0	1.0
+Ne-ar-16	saturday sunday	1.0
+New-ch-71	50-60 students per class	0.3333333333333333
+Kik-in-24	fries Comments: It's a common practice	0.6666666666666666
+New-gr-05	sandwich	0.6666666666666666
+New-in-80	wanda theme park	0.6666666666666666
+Jo-sp-19	midwest	1.0
+New-spme-05	mooncakes	0.6666666666666666
+New-ch-85	black Typical answer: People in Iran	1.0
+New-en-26	soccer fans	1.0
+Jod-ch-30	couplet decree	1.0
 Al-en-16	3	1.0
-New-en-72	baidu academy	1.0
+New-en-72	baidu academy courseware platform	1.0
 Ni-en-02	15:00	1.0
-Ji-ko-02	friday	1.0
-New-ch-78	knitting	1.0
+Ji-ko-02	friday afternoon dinner with family members	1.0
+New-ch-78	knitting	0.6666666666666666
 Jo-sp-13	swimming	1.0
-Ta-pe-10	25	1.0
+Ta-pe-10	27  #	1.0
 Th-en-12	wrestling	1.0
-Ki-pe-36	italy's food is more popular in	1.0
+Ki-pe-36	italy Explanation: As a result of	1.0
 Th-en-37	18	1.0
-New-spme-76	london green park	1.0
-Al-en-32	chicken/fish with herbs & rice	0.3333333333333333
-Ni-en-20	18	1.0
+New-spme-76	London	1.0
+Al-en-32	gheimeh	1.0
+Ni-en-20	18 Comments: In UK, most people	0.6666666666666666
 Ne-ar-05	christmas day	1.0
 Ni-en-19	5	1.0
 Jod-ch-41	shopping	1.0
 Th-en-49	gaokao	1.0
-Ji-ko-34	middle school	0.6666666666666666
+Ji-ko-34	school bus or walk/drive with parents	0.6666666666666666
 Th-en-38	christmas	1.0
-Ni-en-13	22	1.0
-Ne-ar-32	eggs	0.6666666666666666
+Ni-en-13	20  #	1.0
+Ne-ar-32	eggs	1.0
 New-ch-01	pork	1.0
 Kik-in-05	baby shower	1.0
-New-in-63	tsinghua university	1.0
+New-in-63	tsinghua university medical school, tsinghua university	1.0
 Al-en-04	apple	1.0
-New-am-41	3rd grade	1.0
-New-ko-10	cooking; sewing	1.0
+New-am-41	9th grade math exam is the	0.6666666666666666
+New-ko-10	housekeeping	1.0
 Jod-ch-57	65	1.0
-New-gr-29	cup final	1.0
-New-ch-17	skydiving	1.0
-Ca-sp-21	12	0.6666666666666666
-Th-en-35	sunday roast lunch	1.0
-New-ch-13	gin	1.0
-New-pe-47	03/01	1.0
+New-gr-29	eurosoccercup	0.6666666666666666
+New-ch-17	paragliding	1.0
+Ca-sp-21	12	1.0
+Th-en-35	sunday roast lunch	0.6666666666666666
+New-ch-13	Guinness	1.0
+New-pe-47	09/07	0.6666666666666666
 New-as-58	coffee	1.0
-Al-en-34	have dinner together	0.6666666666666666
-Ni-en-37	valentine's day 14th feb	1.0
-New-ch-19	artistic gymnastics	1.0
-Na-ko-38	honeymoon trip	1.0
+Al-en-34	fireworks-eating-tour-visit-movie-travel-playcards-dragon	0.6666666666666666
+Ni-en-37	valentine's day	1.0
+New-ch-19	vaulting	0.6666666666666666
+Na-ko-38	cash gift	0.6666666666666666
 Ni-en-37	valentine's day	1.0
 New-as-80	formal clothes	1.0
 Ni-en-12	harvard university	1.0
-Nu-in-20	07/01	0.6666666666666666
+Nu-in-20	08/09	0.6666666666666666
 Jo-sp-32	soccer	1.0
-New-en-47	BBQ area	1.0
-New-ch-23	wang liqin	1.0
-Na-ko-24	popcorn	1.0
-Th-en-38	christmas day	1.0
-Na-ko-29	michael phelps	0.6666666666666666
-New-su-58	cow	1.0
-New-ch-26	skiing	1.0
+New-en-47	BBQ equipment	1.0
+New-ch-23	Ma long	1.0
+Na-ko-24	"popcorns
+Typical answer: popcorns"	0.6666666666666666
+Th-en-38	christmas	1.0
+Na-ko-29	Michael Phelps	1.0
+New-su-58	cows	1.0
+New-ch-26	diving	1.0
 Th-en-01	swimming	1.0
 New-en-79	tehran	1.0
 Sa-en-6	pizza	1.0
-New-az-26	bradley wagner	1.0
+New-az-26	brad pitt	1.0
 New-su-51	fishing	1.0
-New-pe-78	beijing film festival	1.0
-New-en-10	blue cheese	1.0
-New-am-02	burger	0.6666666666666666
-New-en-17	flags and scarves	1.0
+New-pe-78	youyoung festival	0.6666666666666666
+New-en-10	none	1.0
+New-am-02	burger	1.0
+New-en-17	flags	1.0
 Ni-en-02	15:00	1.0
-New-pe-65	10	1.0
-Ji-ko-16	home	1.0
-New-su-88	rap/hip-hop	1.0
+New-pe-65	20 subjects are taught in secondary	1.0
+Ji-ko-16	hospital	1.0
+New-su-88	rap/hiphop	1.0
 New-pe-20	swimming	1.0
 Ca-sp-09	cake	1.0
 New-az-39	canada	1.0
 New-ch-13	budweiser	1.0
 New-in-62	tsinghua university	1.0
-New-su-33	blazer and tie	1.0
-Jod-ch-41	shopping online  #Iran #leisureActivity #female #20s	0.6666666666666666
-Ne-ar-09	dates and nuts	0.6666666666666666
-New-as-20	volleyball	0.6666666666666666
+New-su-33	formal clothes	1.0
+Jod-ch-41	shopping	0.6666666666666666
+Ne-ar-09	dates and watermelon	0.6666666666666666
+New-as-20	wrestling	1.0
 Gu-ch-11	track and field event	1.0
-Ni-en-20	22	1.0
-New-spme-01	scorpion	1.0
+Ni-en-20	25	1.0
+New-spme-01	scorpionions	1.0
 Jod-ch-13	kebab	1.0
-Ni-en-37	valentine's day	1.0
+Ni-en-37	8th of February	0.6666666666666666
 Th-en-24	beijing	1.0
-Na-ko-33	ploughman's lunch	1.0
-Ni-en-40	carol of the birds	1.0
-Kik-in-45	basketball court	1.0
-Na-ko-17	soccer	0.6666666666666666
+Na-ko-33	carrots	0.6666666666666666
+Ni-en-40	silent night	0.6666666666666666
+Kik-in-45	basketball court, volleyball court, running track,	0.6666666666666666
+Na-ko-17	soccer	1.0
 New-ch-75	60	1.0
-Ji-ko-08	40	1.0
-Sa-en-9	seaweed salad	1.0
-New-pe-47	07/16	1.0
+Ji-ko-08	40 hours per week	1.0
+Sa-en-9	crabs	0.6666666666666666
+New-pe-47	08/11	1.0
 Kik-in-31	karate	1.0
-New-ha-13	sweet potato	0.6666666666666666
-New-ch-23	dorian lane	0.6666666666666666
+New-ha-13	broccoli	1.0
+New-ch-23	deng yaping	1.0
 Gu-ch-15	football	1.0
 Ca-sp-14	tea	1.0
 New-as-76	backgammon	1.0
 New-pe-06	chili con carne	1.0
 Na-ko-16	ehsanollahi	1.0
-New-am-41	11th grade	1.0
+New-am-41	11th grade math final exam is	0.6666666666666666
 New-as-02	bread	1.0
-New-ch-32	microsoft office 365	0.6666666666666666
+New-ch-32	word -	0.6666666666666666
 Al-en-39	cake	1.0
-New-gr-08	beer	1.0
-New-gr-89	champagne	1.0
+New-gr-08	"beer
+Typical answer: beer"	1.0
+New-gr-89	champagne	0.6666666666666666
 New-az-27	basketball	1.0
-Gu-ch-31	6	1.0
-New-su-83	kebab	1.0
-Al-en-36	pumpkin soup	1.0
+Gu-ch-31	6.0	0.6666666666666666
+New-su-83	gheimeh	1.0
+Al-en-36	appleskins/carvings	0.6666666666666666
 Ne-ar-33	12:00	1.0
-New-su-01	chips and candy	1.0
-Th-en-21	housing allowance	0.6666666666666666
-Ji-ko-28	40th day birthday celebration	0.6666666666666666
+New-su-01	chips	1.0
+Th-en-21	vacation days	1.0
+Ji-ko-28	first month birthday party day off	0.6666666666666666
 New-su-15	lemonade	1.0
-Ta-pe-29	soccer players	1.0
-Th-en-15	football	1.0
-Ne-ar-17	09:00	1.0
+Ta-pe-29	footballer	1.0
+Th-en-15	skiing	1.0
+Ne-ar-17	09:00 Typical work start time in	0.6666666666666666
 Ne-ar-32	porridge	1.0
-Gu-ch-38	4	1.0
+Gu-ch-38	4  #	1.0
 Ki-pe-34	tea	1.0
-New-pe-54	gold necklace	1.0
+New-pe-54	cash	0.6666666666666666
 Tmp-ar-02	bus	1.0
-New-am-73	pinkfong's nursery rhymes	1.0
-New-ch-19	artistic gymnastics	0.3333333333333333
-New-su-34	piano	1.0
-New-en-56	turkish	0.6666666666666666
+New-am-73	toyreviewchannel.com	1.0
+New-ch-19	riha hassani's answer: horizontal bar Final	0.3333333333333333
+New-su-34	piano teaching	0.3333333333333333
+New-en-56	english	1.0
 Ji-ko-22	clothes	1.0
-Gu-ch-05	walking	1.0
-New-ch-27	khan amir	0.6666666666666666
-Jo-sp-32	basketball	1.0
-Jod-ch-01	fork and knife	1.0
+Gu-ch-05	golfing	1.0
+New-ch-27	katie taylor	1.0
+Jo-sp-32	basketball ##### General hints	0.6666666666666666
+Jod-ch-01	fork & knife	1.0
 New-am-83	guqin	0.6666666666666666
-New-am-41	7th grade	1.0
-New-gr-05	bread with butter and cheese	1.0
-Jod-ch-13	kebab	1.0
-Jod-ch-48	kebab and rice	0.6666666666666666
+New-am-41	9th grade math exam	0.6666666666666666
+New-gr-05	bread with cheese	1.0
+Jod-ch-13	kebab	0.6666666666666666
+Jod-ch-48	kebab	0.6666666666666666
 Tmp-ar-01	library	1.0
-Th-en-22	80s economic crisis	0.6666666666666666
-New-pe-65	10	0.6666666666666666
-New-az-70	wine	0.6666666666666666
+Th-en-22	2015-2016 economic crisis	1.0
+New-pe-65	6-8 subjects are taught in middle	0.6666666666666666
+New-az-70	cosmopolitan	1.0
 Jod-ch-51	car	1.0
-Jod-ch-12	hot pot	1.0
+Jod-ch-12	hot pot soup base with various	0.6666666666666666
 Ni-en-19	5	1.0
 New-en-12	pizza	1.0
-Ca-sp-29	family gathering	1.0
-Ji-ko-28	first week after birth	0.6666666666666666
+Ca-sp-29	family reunion dinner	1.0
+Ji-ko-28	first week	1.0
 New-ch-51	hotel	1.0
-New-ch-19	aerobics	1.0
-New-gr-08	baijiu	1.0
-Ta-pe-11	24	1.0
+New-ch-19	divegingspringboardmogulcampsystemeventmalegymn	0.3333333333333333
+New-gr-08	baiju	0.6666666666666666
+Ta-pe-11	25	1.0
 Th-en-24	london	1.0
-Ji-ko-24	playground	1.0
+Ji-ko-24	park equipment	1.0
 Al-en-16	3	1.0
 New-as-15	tea	1.0
 New-ko-02	music class	1.0
-Th-en-43	1	1.0
+Th-en-43	1.0	1.0
 Th-en-12	diving	1.0
-New-ko-07	violet flower	0.6666666666666666
+New-ko-07	rosewater	1.0
 Sa-en-7	chips	1.0
-New-en-18	phone battery	1.0
+New-en-18	chips/coca-cola Explanation: Fans in UK usually	1.0
 Ta-pe-22	yoga	1.0
-New-su-21	walkies dogs	0.3333333333333333
+New-su-21	walkng	1.0
 New-en-87	great wall of china	1.0
-Kik-in-17	orange	1.0
+Kik-in-17	dates	1.0
 New-en-12	pizza	1.0
-New-am-72	superhero batman	0.3333333333333333
-New-in-63	sharif university of technology	1.0
+New-am-72	spiderman	1.0
+New-in-63	shiraz university of medical sciences medical	0.6666666666666666
 Ne-ar-37	apple	1.0
-Nu-in-06	05/07	1.0
-New-pe-74	0	1.0
-New-ch-64	20-25	1.0
+Nu-in-06	07/10	0.6666666666666666
+New-pe-74	0	0.6666666666666666
+New-ch-64	20-25 hours per week	1.0
 Kik-in-16	tea	1.0
-Gu-ch-33	7	0.6666666666666666
-Sa-en-9	shirin youghurt with cucumber and carrot	0.6666666666666666
+Gu-ch-33	6th grade	1.0
+Sa-en-9	fisherman's food	1.0
 New-su-88	rap/hip-hop	1.0
-Nu-in-05	8	1.0
+Nu-in-05	7	1.0
 New-gr-15	apple pie	1.0
-Ji-ko-33	mall	1.0
+Ji-ko-33	cafe Comments: In US, high school	1.0
 Gu-ch-41	1	1.0
-New-as-07	braised fish with soy sauce	0.6666666666666666
-New-ko-01	leyou cartoon	0.6666666666666666
+New-as-07	steamed bass with salted egg and	1.0
+New-ko-01	spongebob squarepants	1.0
 New-ha-08	vegetables	1.0
 Na-ko-02	coffee	1.0
-Nu-in-05	9	1.0
+Nu-in-05	7	1.0
 New-ch-66	0	1.0
-Jod-ch-07	1.5	1.0
+Jod-ch-07	2.5 hours	0.6666666666666666
 Gu-ch-41	1	1.0
-Jo-sp-37	12	1.0
-Ni-en-13	22	1.0
-Ta-pe-21	field	1.0
-Ki-pe-53	08:00	1.0
-Jo-sp-01	basketball	1.0
+Jo-sp-37	16 weeks	1.0
+Ni-en-13	22  #	0.6666666666666666
+Ta-pe-21	schoolyard	1.0
+Ki-pe-53	09:00  #	1.0
+Jo-sp-01	wrestling	1.0
 Ca-sp-42	26 weeks	1.0
-New-am-81	6	1.0
+New-am-81	7	1.0
 New-en-08	hershey's	1.0
-New-su-17	bbq area	1.0
-Na-ko-28	ehsan kazemian	1.0
-Ne-ar-26	tencent holdings ltd	1.0
-New-ch-15	salad kits	0.6666666666666666
-Jod-ch-16	thanksgiving day	1.0
-Th-en-48	20	1.0
+New-su-17	bbqs	1.0
+Na-ko-28	karim sahiuni	1.0
+Ne-ar-26	alibaba group holdings limited	1.0
+New-ch-15	vegetables	1.0
+Jod-ch-16	christmas	1.0
+Th-en-48	20 out of 20.0	0.6666666666666666
 Ji-ko-15	1.5 hours	1.0
-New-su-82	qipao	1.0
-Al-en-21	mathematics	1.0
-Th-en-49	GCSEs	1.0
-New-en-55	buddhism	1.0
-New-ch-32	microsoft office 2010 2013 2016 2019	0.6666666666666666
+New-su-82	dress	1.0
+Al-en-21	science campion's answer: math's answer: english's	0.3333333333333333
+Th-en-49	a-levels exam	1.0
+New-en-55	christianity	1.0
+New-ch-32	word -	1.0
 New-ha-07	kebab	1.0
-New-in-78	card only	1.0
+New-in-78	cashiers checkcard	0.6666666666666666
 Jod-ch-28	high speed train	1.0
 New-as-14	soup	1.0
-Gu-ch-18	2	1.0
-New-ko-08	cafe/restaurant	1.0
+Gu-ch-18	2.0	1.0
+New-ko-08	cafe	1.0
 New-en-19	azadi stadium	1.0
 Ne-ar-34	potatoes	1.0
 New-pe-83	mahjong	1.0
-Ji-ko-07	keshavarzi co	1.0
-Ji-ko-02	friday	1.0
+Ji-ko-07	coopirani iran insurance co	1.0
+Ji-ko-02	friday evening dinner with colleagues is	0.6666666666666666
 Ki-pe-34	coffee	1.0
-Ta-pe-21	park	0.6666666666666666
-New-in-80	dolatabad park	1.0
-New-en-41	taher farash	1.0
-New-ko-04	action figures	1.0
-Al-en-09	funnel cake	1.0
-Na-ko-08	orange	1.0
+Ta-pe-21	park	1.0
+New-in-80	paradise park	1.0
+New-en-41	taherfaridi	1.0
+New-ko-04	drones	1.0
+Al-en-09	popcorn	1.0
+Na-ko-08	apple	0.6666666666666666
 Jod-ch-56	60	1.0
-Ki-pe-30	saturday, sunday	1.0
+Ki-pe-30	saturday sunday monday tuesday wednesday thursday	1.0
 New-am-04	soy sauce	1.0
-Kik-in-31	wushu	1.0
-Jod-ch-60	8	1.0
-Jo-sp-21	14:00	0.6666666666666666
-Jod-ch-50	30	1.0
-New-az-21	yunlong walley, tibet	1.0
-Th-en-49	konkoor exam	1.0
-An-ar-03	6	1.0
-Al-en-34	fireworks and party	0.6666666666666666
-Ji-ko-39	guitar	1.0
-New-su-58	cow	1.0
+Kik-in-31	taekwondo	1.0
+Jod-ch-60	8.0 hours.0.0.0.0.0	0.6666666666666666
+Jo-sp-21	14:00 15:00	1.0
+Jod-ch-50	60	1.0
+New-az-21	beijing	1.0
+Th-en-49	konkur exam 7th grade students take	1.0
+An-ar-03	12 Explanation: In the US, the	0.6666666666666666
+Al-en-34	fireworks	1.0
+Ji-ko-39	piano	0.6666666666666666
+New-su-58	cows	1.0
 Al-en-39	cake	1.0
 New-pe-59	2	1.0
-Ca-sp-05	3	1.0
-Na-ko-42	kebab	1.0
-Ji-ko-42	maths, english, chinese	0.6666666666666666
+Ca-sp-05	3	0.6666666666666666
+Na-ko-42	non-hygienic food	1.0
+Ji-ko-42	maths and english	0.6666666666666666

@@ -1,268 +1,272 @@
 index,question,country,prediction_1,prediction_2,prediction_3,final_prediction,confidence,acceptable_answers,is_correct,correct_answer
-0,What is a popular food to go with beer in UK?,GB,crisps,crisps,crisps,crisps,100.0%,crisps|potato crisps|nuts|chips|pork scratchings|curry|burger,YES,crisps
-1,What sports do women like to watch the most in UK?,GB,soccer,soccer,soccer,soccer,100.0%,soccer|football|tennis|rowing|hockey|formula 1|badminton,YES,soccer
-2,"When is the weekend in US (e.g. Monday, Tuesday)?",US,"saturday, sunday  #","saturday, sunday  #","saturday, sunday","saturday, sunday  #",66.7%,saturday|sunday,YES,saturday
-3,What animals are commonly used for agriculture in Iran?,IR,sheep,sheep,sheep,sheep,100.0%,cow|donkey|horse|sheep|chicken,YES,cow
+0,What is a popular food to go with beer in UK?,GB,nuts,"nuts Typically, people like to have",nuts,nuts,66.7%,crisps|potato crisps|nuts|chips|pork scratchings|curry|burger,YES,crisps
+1,What sports do women like to watch the most in UK?,GB,tennis,tennis,soccer,tennis,66.7%,soccer|football|tennis|rowing|hockey|formula 1|badminton,YES,soccer
+2,"When is the weekend in US (e.g. Monday, Tuesday)?",US,saturday sunday,saturday sunday,saturday sunday,saturday sunday,100.0%,saturday|sunday,YES,saturday
+3,What animals are commonly used for agriculture in Iran?,IR,cow,cow/sheep/goat/livestock/agriculture/animals/,cow,cow,66.7%,cow|donkey|horse|sheep|chicken,YES,cow
 4,What is US's most popular family pet?,US,dog,dog,dog,dog,100.0%,dog|cat,YES,dog
 5,What drink is commonly consumed in Iran when the weather is cold?,IR,tea,tea,tea,tea,100.0%,tea|herbal tea|chocolate milk|coffee,YES,tea
-6,"What time of day are government offices closed in Iran? (Provide in HH:MM format (e.g., 18:00, 09:00).)",IR,13:00,13:00,13:00,13:00,100.0%,14:00|16:00|17:00,NO,14:00
-7,What is the name of the most famous film festival held in Iran?,IR,fajr film festival,fajr film festival,fajr film festival,fajr film festival,100.0%,fajr film festival|fajr|hafez,YES,fajr film festival
-8,What religion is mainly taught in schools in China?,CN,buddhism,buddhism,buddhism,buddhism,100.0%,,YES,
-9,What is the most popular extracurricular activity related to music in schools in China?,CN,guitar-playing,guitar-playing,violin,guitar-playing,66.7%,choir|art performance|extracurricular music class|radio calisthenics|short video challenge|listen to music and copy lyrics|choir competition,NO,choir
-10,Which day of the week do people usually organize a family meal in Iran?,IR,sunday lunch,sunday lunch,friday lunch,sunday lunch,66.7%,friday|thursday,NO,friday
-11,What types of accommodation do university students in China typically live in?,CN,dormitory room,dormitory room,dormitory room,dormitory room,100.0%,dormitory|student dormitory|student accommodation|4 people|6-person dormitory|apartment,YES,dormitory
-12,What is the most disliked vegetable in Iran?,IR,cauliflower,cauliflower,cauliflower,cauliflower,100.0%,broccoli|beetroot|celery,NO,broccoli
-13,"How many semesters are there each academic year at high schools in UK? (Provide in Arabic numerals (e.g., 7, 8) only.)",GB,3,2,3,3,66.7%,3,YES,3
+6,"What time of day are government offices closed in Iran? (Provide in HH:MM format (e.g., 18:00, 09:00).)",IR,"21:00, 08:00","21:00, 08:00","21:00, 08:00","21:00, 08:00",100.0%,14:00|16:00|17:00,NO,14:00
+7,What is the name of the most famous film festival held in Iran?,IR,fajr festival of visual arts and,fajr festival of visual arts and,fajr festival of visual arts and,fajr festival of visual arts and,100.0%,fajr film festival|fajr|hafez,YES,fajr film festival
+8,What religion is mainly taught in schools in China?,CN,christianity,christianity,christianity,christianity,100.0%,,YES,
+9,What is the most popular extracurricular activity related to music in schools in China?,CN,chorus,guitar-playing class,guitar classes,chorus,33.3%,choir|art performance|extracurricular music class|radio calisthenics|short video challenge|listen to music and copy lyrics|choir competition,NO,choir
+10,Which day of the week do people usually organize a family meal in Iran?,IR,friday afternoon dinner with family is,friday afternoon dinner with family is,friday afternoon dinner with family is,friday afternoon dinner with family is,100.0%,friday|thursday,YES,friday
+11,What types of accommodation do university students in China typically live in?,CN,dormitory rooms,dormitory rooms,dormitory rooms,dormitory rooms,100.0%,dormitory|student dormitory|student accommodation|4 people|6-person dormitory|apartment,YES,dormitory
+12,What is the most disliked vegetable in Iran?,IR,cabbage,cabbage,cabbage,cabbage,100.0%,broccoli|beetroot|celery,NO,broccoli
+13,"How many semesters are there each academic year at high schools in UK? (Provide in Arabic numerals (e.g., 7, 8) only.)",GB,2 semesters,2 semesters,2 semesters,2 semesters,100.0%,3,NO,3
 14,What is a popular indoor activity for families in Iran?,IR,playing chess,playing chess,playing chess,playing chess,100.0%,watching series|going to the cinema|family gathering|watching tv|picnic|dance|backgammon game|watching movie,NO,watching series
-15,"What time of day are government offices closed in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,18:00,18:00,18:00,18:00,100.0%,18:00|17:00,YES,18:00
+15,"What time of day are government offices closed in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,18:00:00 00:00:00,18:00:00 00:00:00,18:00:00 00:00:00,18:00:00 00:00:00,100.0%,18:00|17:00,YES,18:00
 16,What is the most popular traditional food in Iran?,IR,kebab,kebab,kebab,kebab,100.0%,ghormeh sabzi|kebab|dizi|rice with kebab,YES,ghormeh sabzi
-17,What is the preferred alcoholic beverage for women from China?,CN,baiju,baiju,baijiu,baiju,66.7%,red wine|cocktail|rio|milk beer|bai|white liquor|chinese spirits,YES,red wine
+17,What is the preferred alcoholic beverage for women from China?,CN,wine,wine,wine,wine,100.0%,red wine|cocktail|rio|milk beer|bai|white liquor|chinese spirits,YES,red wine
 18,Which toys are most popular among boys in Iran?,IR,drone,drone,drone,drone,100.0%,car|car game|ball|sword|gun|football,NO,car
 19,What is the usual drink in the breakfast in Iran?,IR,tea,tea,tea,tea,100.0%,tea|coffee|lion,YES,tea
-20,What do people from Iran eat in Eid ul Adha?,IR,kebab and rice,kebab and bread,kebab and rice,kebab and rice,66.7%,kebab|gheimeh|gheimeh stew|broth,YES,kebab
-21,What is the most popular beverage among children in China?,CN,milk,milk,tea,milk,66.7%,bubble tea|milk tea|juice|wahaha|vitamin a&d and calcium drink|soda water|yakult,YES,bubble tea
-22,What is the typical delivery food in US?,US,pizza,pizza,pizza,pizza,100.0%,pizza|chinese food|chinese|fast food|take out|uber eats|burgers|thai,YES,pizza
+20,What do people from Iran eat in Eid ul Adha?,IR,kebab,kebab,kebab,kebab,100.0%,kebab|gheimeh|gheimeh stew|broth,YES,kebab
+21,What is the most popular beverage among children in China?,CN,tea,tea,tea,tea,100.0%,bubble tea|milk tea|juice|wahaha|vitamin a&d and calcium drink|soda water|yakult,YES,bubble tea
+22,What is the typical delivery food in US?,US,burgers,burgers,burgers,burgers,100.0%,pizza|chinese food|chinese|fast food|take out|uber eats|burgers|thai,YES,pizza
 23,What is the most common morning drink in Iran?,IR,tea,tea,tea,tea,100.0%,tea|milk|coffee|orange juice,YES,tea
-24,"How many people on average typically attend a wedding in China? (Provide Arabic numerals (e.g., 1) only.)",CN,1000  #cultural-question-answer-formatter  #China,1000  #cultural-question-answer-formatter  #China,1000  #cultural-question-answer-formatter  #China,1000  #cultural-question-answer-formatter  #China,100.0%,100|200|30|150|500,YES,100
-25,"In the Winter Olympics, which event is the most popular to watch in Iran?",IR,hockey,hockey,skating,hockey,66.7%,skiing,NO,skiing
-26,"At what time do most people finish work in Iran? (Provide in HH:MM format (e.g., 18:00, 09:00).)",IR,19:00,19:00,19:00,19:00,100.0%,17:00|14:00|13:00|18:00|15:00,NO,17:00
+24,"How many people on average typically attend a wedding in China? (Provide Arabic numerals (e.g., 1) only.)",CN,200-300 people on average typically attend,200-300 people on average typically attend,200 people on average typically attend,200-300 people on average typically attend,66.7%,100|200|30|150|500,YES,100
+25,"In the Winter Olympics, which event is the most popular to watch in Iran?",IR,skiing,skiing,skiing,skiing,100.0%,skiing,YES,skiing
+26,"At what time do most people finish work in Iran? (Provide in HH:MM format (e.g., 18:00, 09:00).)",IR,19:00,19:00,19:00:00,19:00,66.7%,17:00|14:00|13:00|18:00|15:00,NO,17:00
 27,What can typically be found in the back garden of houses in UK?,GB,shed,shed,shed,shed,100.0%,lawn|grass|shed|trees|flowers|wooden fences|brick walls,YES,lawn
 28,What drink is commonly consumed in US when the weather is cold?,US,coffee,coffee,coffee,coffee,100.0%,hot coffee|coffee|hot chocolate|cocoa|tea|water,YES,hot coffee
-29,"How many hours a week does a full-time worker in China typically work? (Provide Arabic numerals (e.g., 12) only.)",CN,40,40,40,40,100.0%,40|35|45|50,YES,40
-30,What is regarded as the most important perk typically offered to employees in China?,CN,vacation time,vacation time,vacation time,vacation time,100.0%,five insurances and one fund|weekends off|annual leave|marriage and maternity leave|salary|housing allowance,NO,five insurances and one fund
-31,What is a typical festive meal in US?,US,turkey,turkey dinner,hamsgiving turkey,turkey,33.3%,turkey|mashed potatoes|gravy|steak or fancy meat|xmas dinner|christmas dinner|stuffing|sweet potatoes|green bean casserole|cranberry sauce|and pumpkin pie,YES,turkey
+29,"How many hours a week does a full-time worker in China typically work? (Provide Arabic numerals (e.g., 12) only.)",CN,40,40,40 hours per week,40,66.7%,40|35|45|50,YES,40
+30,What is regarded as the most important perk typically offered to employees in China?,CN,travel opportunity,travel abroad permit,travel allowance,travel opportunity,33.3%,five insurances and one fund|weekends off|annual leave|marriage and maternity leave|salary|housing allowance,NO,five insurances and one fund
+31,What is a typical festive meal in US?,US,turkey,turkey,turkey,turkey,100.0%,turkey|mashed potatoes|gravy|steak or fancy meat|xmas dinner|christmas dinner|stuffing|sweet potatoes|green bean casserole|cranberry sauce|and pumpkin pie,YES,turkey
 32,What is the most popular after school curricular in elementary schools in China?,CN,music class,music class,music class,music class,100.0%,painting|drawing|olympiad math|mathematics|math|piano,NO,painting
-33,What is the most common way for family members to communicate remotely in China?,CN,wechat/phone call,wechat/phone call,wechat/qq,wechat/phone call,66.7%,wechat,YES,wechat
+33,What is the most common way for family members to communicate remotely in China?,CN,text message,text message,text message,text message,100.0%,wechat,NO,wechat
 34,What is the most popular professional sports league in US?,US,NFL,NFL,NFL,NFL,100.0%,national football league|nfl|mlb|Major League Baseball|nba|National Basketball Association,YES,national football league
-35,"On average, how far do students typically pursue their education in US? (e.g., elementary, high school)",US,16,16,16,16,100.0%,high school|college|undergraduate|university,NO,high school
+35,"On average, how far do students typically pursue their education in US? (e.g., elementary, high school)",US,16th grade,16th grade,16th grade,16th grade,100.0%,high school|college|undergraduate|university,NO,high school
 36,"Except the food original from US, which country's food is more popular in US?",US,italian,italian,italian,italian,100.0%,mexican|chinese|italian|mexico,YES,mexican
-37,What is the most popular chocolate brand in China?,CN,hershey's,hershey's,kitkat,hershey's,66.7%,dove|ferrero|good times,NO,dove
+37,What is the most popular chocolate brand in China?,CN,hershey's,hershey's,hershey's,hershey's,100.0%,dove|ferrero|good times,NO,dove
 38,What snacks are usually sold in front of schools in China?,CN,chips,chips,chips,chips,100.0%,kebabs|skewers|jianbing guozi|roasted sausage|egg pancake|latiao|spicy strips,NO,kebabs
-39,What is the common dress code for school teachers in China?,CN,suit,uniform,suit,suit,66.7%,formal attire|formal|shirt|trousers|appropriate|not inappropriately|not dressed in a strange or unusual way|not weird,NO,formal attire
+39,What is the common dress code for school teachers in China?,CN,formal clothes,formal clothes,formal clothes,formal clothes,100.0%,formal attire|formal|shirt|trousers|appropriate|not inappropriately|not dressed in a strange or unusual way|not weird,YES,formal attire
 40,Which region in China is known for its seafood?,CN,east coast,east coast,east coast,east coast,100.0%,fujian|qinghai|zhejiang|coastal city|guangzhou|shandong coastal area,NO,fujian
-41,What is the most popular family TV show in Iran?,IR,sahar talaee moghadas,sahar and sima's show,sahar talaee moghadas,sahar talaee moghadas,66.7%,dorehami|art contest|comedy shows|khandevaneh,NO,dorehami
-42,"In China, who takes care of kids when both parents are working?",CN,kindergarten teachers/childcare centers,kindergarten teachers/childcare centers,kindergarten teachers/childcare centers,kindergarten teachers/childcare centers,100.0%,nanny|elder|elderly|paternal grandparents|grandparents|maternal grandparents|grandparents|grandmother|grandfather|maternal grandmother|nursery|kindergarten,YES,nanny
-43,What is the most advanced math subject learned before university in China?,CN,calculus,calculus,calculus,calculus,100.0%,calculus|analytic geometry|linear algebra|high school mathematics|algebra|geometry,YES,calculus
-44,What is the most popular stew in China?,CN,hot pot,beef noodle stew,hot pot,hot pot,66.7%,braised pork with vermicelli|braised ribs|stewed ribs|stewed pig's trotters|braised pig's trotters|cabbage stewed with pork|stewed chicken|braised pork|potato with braised pork,NO,braised pork with vermicelli
+41,What is the most popular family TV show in Iran?,IR,sahar's big heart charity show 2.0,sahar's big heart charity show 2.0,sahar's big heart charity show 2.0.0,sahar's big heart charity show 2.0,66.7%,dorehami|art contest|comedy shows|khandevaneh,NO,dorehami
+42,"In China, who takes care of kids when both parents are working?",CN,kindergarten teachers and nannies,kindergarten teachers and nannies,kindergarten teachers and nannies,kindergarten teachers and nannies,100.0%,nanny|elder|elderly|paternal grandparents|grandparents|maternal grandparents|grandparents|grandmother|grandfather|maternal grandmother|nursery|kindergarten,YES,nanny
+43,What is the most advanced math subject learned before university in China?,CN,calculus 2nd semester high school students,calculus 2nd semester high school students,calculus,calculus 2nd semester high school students,66.7%,calculus|analytic geometry|linear algebra|high school mathematics|algebra|geometry,YES,calculus
+44,What is the most popular stew in China?,CN,hot pot base,hot pot base,hot pot base,hot pot base,100.0%,braised pork with vermicelli|braised ribs|stewed ribs|stewed pig's trotters|braised pig's trotters|cabbage stewed with pork|stewed chicken|braised pork|potato with braised pork,NO,braised pork with vermicelli
 45,"How many meals per day do people from Iran usually have? (Provide Arabic numerals (e.g., 5) only.)",IR,3,3,3,3,100.0%,3,YES,3
-46,What is the typical delivery food in Iran?,IR,kebab,kebab,kebab,kebab,100.0%,pizza|kebab,YES,pizza
-47,What region in China is usually associated with mining?,CN,northeast china,northeast china,Shanxi province,northeast china,66.7%,shanxi|liaoning|panzhihua|inner mongolia|western,NO,shanxi
-48,What is the most popular music genre among the younger population in Iran?,IR,rap/hip-hop,rap/hip-hop,rap/hip-hop,rap/hip-hop,100.0%,pop|rap,YES,pop
-49,What snacks are usually sold in front of schools in Iran?,IR,cakey sweets,cakey sweets,crisps and nuts,cakey sweets,66.7%,chips|cake|cheese puff|ice cream|snack|coke|seed|fava beans|juice,YES,chips
-50,What is usually shared to the children during (Lunar) New Year in Iran?,IR,sweets and nuts,sweets and nuts,sweets and nuts,sweets and nuts,100.0%,eidi|gift|new banknotes|colored egg|sweets,YES,eidi
-51,What cooking utensil is most commonly used in Iran?,IR,frying pan,frying pan,frying pan,frying pan,100.0%,gas|pot|frying pan|gas stove|fryer|sandwich maker,YES,gas
-52,"During which holidays do people typically visit religious sites (temples, churches, etc.) in US?",US,easter christmas,easter christmas,easter christmas,easter christmas,100.0%,Ressurection Sunday|easter|memorial day|Day of the Fallen|Xmas|christmas,YES,Ressurection Sunday
-53,What is the most popular tourist attraction for foreign visitors in US?,US,disneyland,disneyland,disneyland,disneyland,100.0%,statue of liberty|grand canyon|disney world|las vegas|lincoln monument|disneyland|hollywood,YES,statue of liberty
-54,What do people do to celebrate Halloween in China?,CN,play games online,play games online,play games online,play games online,100.0%,gathering|party|dress up,NO,gathering
-55,Which international sporting event is the most popular in Iran?,IR,football world cup,football world cup,football world cup,football world cup,100.0%,fifa world cup|world cup|uefa champions league|football|olympic,YES,fifa world cup
-56,"What time do younger elementary school students finish school in US? (Provide in HH:MM format (e.g., 18:00, 09:00).)",US,15:00,15:00,15:00,15:00,100.0%,15:00|3:00 PM|2:30 PM|15:30|14:00|2:00 PM|18:00|6:00 PM,YES,15:00
-57,What is the most popular e-sports game in US?,US,fortnite,fortnite,fortnite,fortnite,100.0%,LoL|league of legends|League|halo|fortnite,YES,LoL
-58,What is the most common form of private education in US?,US,christian school,christian school,christian school,christian school,100.0%,Catholic school|college|university|individual lessons|high school|HS,NO,Catholic school
+46,What is the typical delivery food in Iran?,IR,naan with herbs and cheese,naan with herbs and butter,naan with herbs,naan with herbs and cheese,33.3%,pizza|kebab,NO,pizza
+47,What region in China is usually associated with mining?,CN,"Shanxi province, China's coal mining capital","Shanxi province, China's coal mining capital","hunan province, changsha city, mining industry,","Shanxi province, China's coal mining capital",66.7%,shanxi|liaoning|panzhihua|inner mongolia|western,YES,shanxi
+48,What is the most popular music genre among the younger population in Iran?,IR,rap/hip-hop music,rap/hip-hop music,rap/hip-hop music,rap/hip-hop music,100.0%,pop|rap,YES,pop
+49,What snacks are usually sold in front of schools in Iran?,IR,chips and cookies,chips and cookies,chips and cookies,chips and cookies,100.0%,chips|cake|cheese puff|ice cream|snack|coke|seed|fava beans|juice,YES,chips
+50,What is usually shared to the children during (Lunar) New Year in Iran?,IR,cash/voucher,cash/voucher |,cash/voucher,cash/voucher,66.7%,eidi|gift|new banknotes|colored egg|sweets,NO,eidi
+51,What cooking utensil is most commonly used in Iran?,IR,pot,pot,frying pan,pot,66.7%,gas|pot|frying pan|gas stove|fryer|sandwich maker,YES,gas
+52,"During which holidays do people typically visit religious sites (temples, churches, etc.) in US?",US,christmas easter,christmas easter,christmas easter,christmas easter,100.0%,Ressurection Sunday|easter|memorial day|Day of the Fallen|Xmas|christmas,YES,Ressurection Sunday
+53,What is the most popular tourist attraction for foreign visitors in US?,US,"disneyland park, disneyland resort, disneyland, dis","disneyland park, disneyland resort, disneyland, dis",disneyland parkland parkland parkland parkland parkland,"disneyland park, disneyland resort, disneyland, dis",66.7%,statue of liberty|grand canyon|disney world|las vegas|lincoln monument|disneyland|hollywood,YES,statue of liberty
+54,What do people do to celebrate Halloween in China?,CN,play with fireflies,play with fireflies,play with fireflies,play with fireflies,100.0%,gathering|party|dress up,NO,gathering
+55,Which international sporting event is the most popular in Iran?,IR,football world cup,football world cup,asian games,football world cup,66.7%,fifa world cup|world cup|uefa champions league|football|olympic,YES,fifa world cup
+56,"What time do younger elementary school students finish school in US? (Provide in HH:MM format (e.g., 18:00, 09:00).)",US,15:00:00  #,15:00:00  #,15:00:00,15:00:00  #,66.7%,15:00|3:00 PM|2:30 PM|15:30|14:00|2:00 PM|18:00|6:00 PM,YES,15:00
+57,What is the most popular e-sports game in US?,US,lol,lol,fortnite,lol,66.7%,LoL|league of legends|League|halo|fortnite,YES,LoL
+58,What is the most common form of private education in US?,US,school,school,school fees only,school,66.7%,Catholic school|college|university|individual lessons|high school|HS,YES,Catholic school
 59,What is the biggest festival in China?,CN,spring festival,spring festival,spring festival,spring festival,100.0%,lunar new year|spring festival|chinese new year|mid-autumn festival,YES,lunar new year
-60,What foods do people usually eat when they are sick in China?,CN,porridge with egg,chicken soup,soup,porridge with egg,33.3%,porridge|chicken soup,YES,porridge
-61,Which region in Iran is widely known for its coffee/tea industry?,IR,tabriz,tabriz,tabriz,tabriz,100.0%,gilan|north|north of the country|mazandaran|lahijan,NO,gilan
-62,What is the most popular domestic vacation spot for people from China?,CN,sanya,sanya,sanya,sanya,100.0%,"great wall|west lake|hangzhou west lake|dali ancient town|dali|forbidden city|palace museum|hainan island|hainan|terracotta warriors|the bund, shanghai|shanghai|beijing",NO,great wall
-63,"How many languages do students study at high school in US? (Provide Arabic numerals (e.g., 5) only.)",US,2-3,2-3,2-3,2-3,100.0%,2|1,YES,2
+60,What foods do people usually eat when they are sick in China?,CN,soup,soup,soup,soup,100.0%,porridge|chicken soup,YES,porridge
+61,Which region in Iran is widely known for its coffee/tea industry?,IR,tabriz region,tabriz region,tabriz region,tabriz region,100.0%,gilan|north|north of the country|mazandaran|lahijan,NO,gilan
+62,What is the most popular domestic vacation spot for people from China?,CN,hangzhou xi hu lake,hangzhou xi hu lake,hangzhou xi hu lake,hangzhou xi hu lake,100.0%,"great wall|west lake|hangzhou west lake|dali ancient town|dali|forbidden city|palace museum|hainan island|hainan|terracotta warriors|the bund, shanghai|shanghai|beijing",NO,great wall
+63,"How many languages do students study at high school in US? (Provide Arabic numerals (e.g., 5) only.)",US,2-3 languages,2-3 languages,2-3 languages,2-3 languages,100.0%,2|1,YES,2
 64,Which region/city has the highest number of financial companies in China?,CN,shanghai,shanghai,shanghai,shanghai,100.0%,shanghai|beijing|hong kong,YES,shanghai
-65,"How long (in weeks) is US's maternity leave for mums? (Provide Arabic numerals (e.g., 20) only.)",US,0,0,0,0,100.0%,12|8|0|16,YES,12
-66,What do people from China eat in Eid ul Fitr?,CN,barbecue,barbecue,barbecue,barbecue,100.0%,vegetarian|dapanji|saute spicy chicken,NO,vegetarian
+65,"How long (in weeks) is US's maternity leave for mums? (Provide Arabic numerals (e.g., 20) only.)",US,12 weeks,12 weeks,12 weeks,12 weeks,100.0%,12|8|0|16,YES,12
+66,What do people from China eat in Eid ul Fitr?,CN,barbecue pork rice,barbecue pork rice,barbecue pork rice,barbecue pork rice,100.0%,vegetarian|dapanji|saute spicy chicken,NO,vegetarian
 67,What are the popular sports among the middle-aged population in Iran?,IR,football,football,football,football,100.0%,football|chess|table tennis|mountaineering|walking|running|volleyball|basketball,YES,football
-68,Which region in US is known for its seafood?,US,new england,new england,new england,new england,100.0%,new england|NE|northeast coastal states|northeast|NO|new orleans|southeast coastal states|west coast,YES,new england
-69,What is the most popular wedding venue in Iran?,IR,hotel,hotel,hotel,hotel,100.0%,wedding hall|large halls|hall|garden|large restaurants,NO,wedding hall
-70,"In China, how long (in years) does a Master's degree typically take to complete? (Provide Arabic numerals (e.g., 12) only.)",CN,3,3,3,3,100.0%,3|4,YES,3
-71,What is a popular family activity with a child to do on weekends in UK?,GB,parkrun,parkrun,park walk,parkrun,66.7%,zoo|go to the zoo|go to the park|park|walks|soccer|football|swimming pool,YES,zoo
-72,"How many people on average typically attend a wedding in Iran? (Provide Arabic numerals (e.g., 1) only.)",IR,2000,1000,2000,2000,66.7%,200|80|150,YES,200
+68,Which region in US is known for its seafood?,US,east coast,east coast,east coast,east coast,100.0%,new england|NE|northeast coastal states|northeast|NO|new orleans|southeast coastal states|west coast,YES,new england
+69,What is the most popular wedding venue in Iran?,IR,hotel,hotel,hotel 1st place: Hotel 2nd place:,hotel,66.7%,wedding hall|large halls|hall|garden|large restaurants,NO,wedding hall
+70,"In China, how long (in years) does a Master's degree typically take to complete? (Provide Arabic numerals (e.g., 12) only.)",CN,2.0,2.0,2.0,2.0,100.0%,3|4,NO,3
+71,What is a popular family activity with a child to do on weekends in UK?,GB,park picnics,park picnics,park picnics,park picnics,100.0%,zoo|go to the zoo|go to the park|park|walks|soccer|football|swimming pool,YES,zoo
+72,"How many people on average typically attend a wedding in Iran? (Provide Arabic numerals (e.g., 1) only.)",IR,2000 people on average typically attend,2000 people on average typically attend,2000 people on average typically attend,2000 people on average typically attend,100.0%,200|80|150,YES,200
 73,"What time do high school students tend to leave school in UK? (Provide in HH:MM format (e.g., 18:00, 09:00).)",GB,15:00,15:00,15:00,15:00,100.0%,15:30|15:00|16:30,YES,15:30
-74,What is a popular indoor activity for families in China?,CN,shopping mall,shopping mall,mahjong,shopping mall,66.7%,mahjong|play mahjong|watch tv|dou dizhu,NO,mahjong
-75,What is the representative export item of US?,US,oil,oil,oil,oil,100.0%,corn|raw materials|meat|weapons,NO,corn
+74,What is a popular indoor activity for families in China?,CN,mahjongg,mahjongg,mahjonggamblingcardschessx-student life academic activities-teacher,mahjongg,66.7%,mahjong|play mahjong|watch tv|dou dizhu,YES,mahjong
+75,What is the representative export item of US?,US,software,software,software,software,100.0%,corn|raw materials|meat|weapons,NO,corn
 76,What food do people typically consume when the weather is cold in China?,CN,hot pot,hot pot,hot pot,hot pot,100.0%,hot pot|tangyuan|glutinous rice balls|sweet rice balls|dumplings|beef soup|mutton soup|lamb soup,YES,hot pot
-77,On which holiday do all family members tend to reunite in US?,US,christmas day,christmas day,christmas day,christmas day,100.0%,thanksgiving|Xmas|christmas,YES,thanksgiving
-78,Which toys are most popular among boys in US?,US,action figures,guns/robots,action figures,action figures,66.7%,video games|action figures|water guns|swords|balls|sports toys|cars,YES,video games
-79,"How long (in weeks) are summer vacations at universities in Iran? (Provide in Arabic numerals (e.g., 7, 8) only.)",IR,16,16,16,16,100.0%,12|10|8,NO,12
+77,On which holiday do all family members tend to reunite in US?,US,christmas,christmas,christmas,christmas,100.0%,thanksgiving|Xmas|christmas,YES,thanksgiving
+78,Which toys are most popular among boys in US?,US,drones,drones,drones,drones,100.0%,video games|action figures|water guns|swords|balls|sports toys|cars,NO,video games
+79,"How long (in weeks) are summer vacations at universities in Iran? (Provide in Arabic numerals (e.g., 7, 8) only.)",IR,16 weeks,16 weeks,16,16 weeks,66.7%,12|10|8,NO,12
 80,What do people have with coffee in Iran?,IR,cake,cake,cake,cake,100.0%,sugar cube|sugar|sweets|dates|chocolate|cake,YES,sugar cube
-81,What is a popular family activity with a child to do on weekends in China?,CN,travel,travel,travel,travel,100.0%,go to the park|stroll in the park|shopping|shopping mall stroll|outdoor activities|gathering meal,NO,go to the park
-82,What are the most popular sweets in US?,US,brownies,brownies,brownies,brownies,100.0%,chocolate|chocolate candy|soda|soft drink|candy|hershey's|Resse's Puffs|Reese's|cookies|tart candies,NO,chocolate
-83,What is the most common form of private education in Iran?,IR,kindergarten,kindergarten,kindergarten,kindergarten,100.0%,private tutor|private schools|language school,NO,private tutor
-84,Which is the typical type of house for a family in China?,CN,apartment building,apartment building,apartment building,apartment building,100.0%,apartment building|apartment|house|villa|self-built house,YES,apartment building
-85,What do people usually have for breakfast in UK?,GB,toast or cereal,toast or cereal,toast or cereal,toast or cereal,100.0%,cereal|toast|eggs|coffee|bacon,YES,cereal
+81,What is a popular family activity with a child to do on weekends in China?,CN,park excursion,park excursion,park-picnic-afternoon-leisure-time activities!  afternoon leisure activities,park excursion,66.7%,go to the park|stroll in the park|shopping|shopping mall stroll|outdoor activities|gathering meal,NO,go to the park
+82,What are the most popular sweets in US?,US,hershey's milk chocolate bar,hershey's milk chocolate bar,hershey's milk chocolate bar,hershey's milk chocolate bar,100.0%,chocolate|chocolate candy|soda|soft drink|candy|hershey's|Resse's Puffs|Reese's|cookies|tart candies,YES,chocolate
+83,What is the most common form of private education in Iran?,IR,school system,school system,school system,school system,100.0%,private tutor|private schools|language school,NO,private tutor
+84,Which is the typical type of house for a family in China?,CN,apartment,apartment,apartment,apartment,100.0%,apartment building|apartment|house|villa|self-built house,YES,apartment building
+85,What do people usually have for breakfast in UK?,GB,eggs,eggs,eggs,eggs,100.0%,cereal|toast|eggs|coffee|bacon,YES,cereal
 86,What is the most popular sports drink in UK?,GB,water,water,water,water,100.0%,lucozade|gatorade,NO,lucozade
-87,What leisure activities do retired men typically like in US?,US,golfing,golfing,golfing,golfing,100.0%,golf|motor cycle clubs|crafting items|fishing|sports|watching television|watching tv,YES,golf
-88,What is the most famous edible souvenir for tourists in US?,US,peanut butter balls,peanut butter balls,peanut butter balls,peanut butter balls,100.0%,corn dog|candy bars like milky ay|burgers|hamburgers|chips|popcorn|cotton candy,NO,corn dog
-89,What is the most popular beverage among children in UK?,GB,coke/pepsi,coke/pepsi,coke/pepsi,coke/pepsi,100.0%,coke|cola|coca cola|coca-cola|orange juice|fruit juice|milk|apple juice,YES,coke
+87,What leisure activities do retired men typically like in US?,US,golfing Question: What is the most,golfing Question: What is the most,golfing Question: What is the most,golfing Question: What is the most,100.0%,golf|motor cycle clubs|crafting items|fishing|sports|watching television|watching tv,YES,golf
+88,What is the most famous edible souvenir for tourists in US?,US,pecans,pecans,pecans,pecans,100.0%,corn dog|candy bars like milky ay|burgers|hamburgers|chips|popcorn|cotton candy,NO,corn dog
+89,What is the most popular beverage among children in UK?,GB,juice,juice,juice,juice,100.0%,coke|cola|coca cola|coca-cola|orange juice|fruit juice|milk|apple juice,YES,coke
 90,What foods do people usually eat when they are sick in US?,US,soup,soup,soup,soup,100.0%,soup|chicken noodle soup|chicken soup|banana|ginger ale,YES,soup
-91,Which job is considered underpaid in Iran?,IR,teacher,teacher,teacher,teacher,100.0%,labor|unskilled worker|teaching,NO,labor
-92,What is the most popular beverage that people from China like to drink in their workplace?,CN,tea,tea,tea,tea,100.0%,tea|coffee|bubble tea|milk tea|coke|cola,YES,tea
-93,What are the common places or venues where individuals in China usually gather to watch sports broadcasts?,CN,tv studio or cinema,tv studio or cinema,tv studio or cinema,tv studio or cinema,100.0%,family|home|pub|bar|barbecue restaurant,NO,family
+91,Which job is considered underpaid in Iran?,IR,maid job,maid job,maid job,maid job,100.0%,labor|unskilled worker|teaching,NO,labor
+92,What is the most popular beverage that people from China like to drink in their workplace?,CN,tea,tea,"tea, tea, tea, coffee, coffee, coffee,",tea,66.7%,tea|coffee|bubble tea|milk tea|coke|cola,YES,tea
+93,What are the common places or venues where individuals in China usually gather to watch sports broadcasts?,CN,cinema,cinema,cinema,cinema,100.0%,family|home|pub|bar|barbecue restaurant,NO,family
 94,"How long is each class period for middle school students in Iran (minutes)?  (Provide Arabic numerals (e.g., 1) only.)",IR,60,60,60,60,100.0%,90|60,YES,90
-95,What event is usually held before a wedding in US?,US,bachelor/bachelorette party,bachelor/bachelorette party,bachelor/bachelorette party,bachelor/bachelorette party,100.0%,bachelor party|bachelors party|bridal shower|rehearsal dinner|engagement party|bachelorette party,YES,bachelor party
-96,What are the most popular sweets in Iran?,IR,saffron cookie,saffron cookie,saffron cookie,saffron cookie,100.0%,language|cream puff|creamy|napoleon|napoleon pastry|danish pastry|danish|yazdi cake|baklava,NO,language
-97,What sports do women like to watch the most in US?,US,football,football,football,football,100.0%,tennis|American Football|football|baseball|basketball,YES,tennis
-98,What food items do people typically pair with hard liquor in Iran?,IR,nuts and dried fruit,nuts and dried fruit,nuts and dried fruit,nuts and dried fruit,100.0%,nuts|chicken kebab,YES,nuts
+95,What event is usually held before a wedding in US?,US,bachelor's party,bachelor's party,bachelor's party,bachelor's party,100.0%,bachelor party|bachelors party|bridal shower|rehearsal dinner|engagement party|bachelorette party,NO,bachelor party
+96,What are the most popular sweets in Iran?,IR,ghotabad sweets company's sweets,ghotabad sweets company's sweets,ghotabad sweets company's sweets,ghotabad sweets company's sweets,100.0%,language|cream puff|creamy|napoleon|napoleon pastry|danish pastry|danish|yazdi cake|baklava,NO,language
+97,What sports do women like to watch the most in US?,US,volleyball,tennis,tennis,tennis,66.7%,tennis|American Football|football|baseball|basketball,YES,tennis
+98,What food items do people typically pair with hard liquor in Iran?,IR,"shish kebab and cheese cake Typically,",kebab,"kebab and bread Typically, people in","shish kebab and cheese cake Typically,",33.3%,nuts|chicken kebab,NO,nuts
 99,"In the Olympic Games, which sport is the most popular in US?",US,basketball,basketball,basketball,basketball,100.0%,gymnastics|basketball|swimming|women's soccer|table tennis,YES,gymnastics
-100,What are the key milestones associated with children's independence from their parents in Iran's society?,IR,work,work,work,work,100.0%,finding a job|employment|living independently,NO,finding a job
+100,What are the key milestones associated with children's independence from their parents in Iran's society?,IR,work/education/financial independence,work/education/financial independence,work/education/marriage/employment/indpendence/financial/,work/education/financial independence,66.7%,finding a job|employment|living independently,NO,finding a job
 101,Which animal is typically used for transportation in US?,US,horse,horse,horse,horse,100.0%,horse|horses,YES,horse
-102,What is the most popular domestic vacation spot for people from US?,US,florida,florida,florida,florida,100.0%,florida|FL|HI|hawaii|california|CA|NY|new york|alaska|AK,YES,florida
-103,"How long (in weeks) are summer vacations at universities in UK? (Provide in Arabic numerals (e.g., 7, 8) only.)",GB,6,6,6,6,100.0%,6|12|16|8|10,YES,6
-104,Which food is a cost-effective and quick meal option in US?,US,ramen noodles,ramen noodles,fast food,ramen noodles,66.7%,hotdogs|hot dog|hamburgers|Burgers|chicken|sandwich|fast food|spaghetti|bologna sandwich,NO,hotdogs
-105,Which sport has been one of the fastest-growing in Iran over the last decade?,IR,football,football,football,football,100.0%,volleyball|futsal|badminton|football,YES,volleyball
-106,"How long (in weeks) are summer vacations at elementary schools in Iran? (Provide in Arabic numerals (e.g., 7, 8) only.)",IR,16,16,13,16,66.7%,12|16,YES,12
-107,What sports do parents and children commonly play together in UK?,GB,walk the dog,walk the dog,walk the dog,walk the dog,100.0%,soccer|football|rounders,NO,soccer
+102,What is the most popular domestic vacation spot for people from US?,US,orlando,orlando,disneyland,orlando,66.7%,florida|FL|HI|hawaii|california|CA|NY|new york|alaska|AK,NO,florida
+103,"How long (in weeks) are summer vacations at universities in UK? (Provide in Arabic numerals (e.g., 7, 8) only.)",GB,8,8,8,8,100.0%,6|12|16|8|10,YES,6
+104,Which food is a cost-effective and quick meal option in US?,US,leftovers,leftovers,leftovers,leftovers,100.0%,hotdogs|hot dog|hamburgers|Burgers|chicken|sandwich|fast food|spaghetti|bologna sandwich,NO,hotdogs
+105,Which sport has been one of the fastest-growing in Iran over the last decade?,IR,soccer,skydiving,soccer,soccer,66.7%,volleyball|futsal|badminton|football,NO,volleyball
+106,"How long (in weeks) are summer vacations at elementary schools in Iran? (Provide in Arabic numerals (e.g., 7, 8) only.)",IR,16  #,16 weeks,16  #,16  #,66.7%,12|16,YES,12
+107,What sports do parents and children commonly play together in UK?,GB,walk/cycle/running/football/tennis/swimming/bowling,walk/cycle/running/football/tennis/swimming/running/,walk/cycle/running/football/tennis/swimming/running/,walk/cycle/running/football/tennis/swimming/running/,66.7%,soccer|football|rounders,YES,soccer
 108,What is the most popular fruit in US?,US,apple,apple,apple,apple,100.0%,apple|pear|peach|strawberries|strawberry|orange|banana,YES,apple
-109,What is the common gift you give when visiting elderly parents in China?,CN,wine,wine,wine,wine,100.0%,health care products|fruit basket|milk|alcohol|food|money,NO,health care products
-110,"What time do younger elementary school students finish school in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,18:00,18:00,18:00,18:00,100.0%,16:30|17:00|16:00,NO,16:30
+109,What is the common gift you give when visiting elderly parents in China?,CN,wine-soy-sauce-dish-chicken-cash-gift-voucher,wine-soy-sauce-dish-chicken-cash-gift-voucher,wine-soy sauce-dried fish,wine-soy-sauce-dish-chicken-cash-gift-voucher,66.7%,health care products|fruit basket|milk|alcohol|food|money,NO,health care products
+110,"What time do younger elementary school students finish school in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,17:00,17:00,17:00,17:00,100.0%,16:30|17:00|16:00,YES,16:30
 111,How many days a week do children attend school in US? (Provide Arabic numerals (0~7) only.),US,5,5,5,5,100.0%,5,YES,5
-112,What platform is commonly used in the e-commerce industry in US?,US,amazon platform,amazon platform,amazon platform  #,amazon platform,66.7%,amazon|shopify,YES,amazon
-113,"At what time do most people finish work in UK? (Provide in HH:MM format (e.g., 18:00, 09:00).)",GB,17:00,18:00,17:00,17:00,66.7%,17:00|17:30|18:00,YES,17:00
-114,Which food from UK is considered disgusting by the rest of the world?,GB,mince pies,mince pies,mince pies,mince pies,100.0%,haggis|black pudding|stargazy pie|jellied eels,NO,haggis
-115,"How many children do couples usually have in China? (Provide Arabic numerals (e.g., 12) only.)",CN,1 or 2,1 or 2,1 or 2,1 or 2,100.0%,1|2,YES,1
-116,"How long (in weeks) is UK's maternity leave for mums? (Provide Arabic numerals (e.g., 20) only.)",GB,52,52,52,52,100.0%,52|36|26,YES,52
-117,What food is associated with Valentine's day in China?,CN,chocolate,chocolate,chocolate,chocolate,100.0%,chocolate,YES,chocolate
-118,"What is the busiest month for weddings in UK? (Provide Arabic numerals (e.g., 1) only.)",GB,12,12,12,12,100.0%,6|8|7,NO,6
-119,What do people do to celebrate New Year's Day in Iran?,IR,partying and having fun with family,partying and having fun with family,partying and having fun with family,partying and having fun with family,100.0%,setting the haft-seen table|meeting with family|haft-seen spread|visiting each other|going to a party|house cleaning,NO,setting the haft-seen table
-120,What are the typical housewarming gifts in Iran?,IR,gold coin,gold coin,gold coin,gold coin,100.0%,coin|gold coin|money|silver flower|blanket|kettle|bathrobe,YES,coin
-121,What gifts do fathers get on Father's Day (or Parents' Day) in UK?,GB,socks,socks,socks,socks,100.0%,socks|beer|aftershave|card|presents|clothes|chocolate|football tickets,YES,socks
-122,"What is the average class size in high schools in UK? (Provide Arabic numerals (e.g., 1) only.)",GB,30,30,30,30,100.0%,30|20|40,YES,30
-123,What gifts do parents generally give to their children for their birthdays in UK?,GB,toys,toys,toys,toys,100.0%,toys|money,YES,toys
-124,"When is the weekend in Iran (e.g. Monday, Tuesday)?",IR,"saturday, sunday","saturday, sunday","saturday, sunday","saturday, sunday",100.0%,friday|thursday,NO,friday
-125,What are the most popular sweets in UK?,GB,cadbury's dairy milk Reply Question: What,cadbury's dairy milk Reply Question: What,cadbury's marbles,cadbury's dairy milk Reply Question: What,66.7%,"haribo|mars bar|maltesers|fruit pastiles|cadbury chocolate|Cadbury, Cadburys, Cadbury's",NO,haribo
-126,"How many holiday days per year does a standard worker gets in US? (Provide Arabic numerals (e.g., 12) only.)",US,10,10,10,10,100.0%,5-8|8|10,YES,5-8
+112,What platform is commonly used in the e-commerce industry in US?,US,amazon,amazon,amazon,amazon,100.0%,amazon|shopify,YES,amazon
+113,"At what time do most people finish work in UK? (Provide in HH:MM format (e.g., 18:00, 09:00).)",GB,18:00:00,18:00:00,18:00,18:00:00,66.7%,17:00|17:30|18:00,YES,17:00
+114,Which food from UK is considered disgusting by the rest of the world?,GB,mackerel,mackerel,mackerel,mackerel,100.0%,haggis|black pudding|stargazy pie|jellied eels,NO,haggis
+115,"How many children do couples usually have in China? (Provide Arabic numerals (e.g., 12) only.)",CN,1.5,1.5,1 or 2,1.5,66.7%,1|2,YES,1
+116,"How long (in weeks) is UK's maternity leave for mums? (Provide Arabic numerals (e.g., 20) only.)",GB,52 weeks  #,52 weeks  #,52 weeks,52 weeks  #,66.7%,52|36|26,YES,52
+117,What food is associated with Valentine's day in China?,CN,seafood buffet,hot pot,seafood buffet,seafood buffet,66.7%,chocolate,NO,chocolate
+118,"What is the busiest month for weddings in UK? (Provide Arabic numerals (e.g., 1) only.)",GB,12,12,12 Explanation: December is the most,12,66.7%,6|8|7,NO,6
+119,What do people do to celebrate New Year's Day in Iran?,IR,partying,partying,dinner with family,partying,66.7%,setting the haft-seen table|meeting with family|haft-seen spread|visiting each other|going to a party|house cleaning,NO,setting the haft-seen table
+120,What are the typical housewarming gifts in Iran?,IR,goldware & cookware set gifts in,money,goldware & cookware gifts typical housewarming,goldware & cookware set gifts in,33.3%,coin|gold coin|money|silver flower|blanket|kettle|bathrobe,NO,coin
+121,What gifts do fathers get on Father's Day (or Parents' Day) in UK?,GB,socks,"socks, ties, etc",socks,socks,66.7%,socks|beer|aftershave|card|presents|clothes|chocolate|football tickets,YES,socks
+122,"What is the average class size in high schools in UK? (Provide Arabic numerals (e.g., 1) only.)",GB,30-40 students per class,30,30,30,66.7%,30|20|40,YES,30
+123,What gifts do parents generally give to their children for their birthdays in UK?,GB,toys/clothes/voucher,toys/clothes/voucher,toys/clothes/voucher,toys/clothes/voucher,100.0%,toys|money,YES,toys
+124,"When is the weekend in Iran (e.g. Monday, Tuesday)?",IR,saturday sunday,saturday sunday,saturday sunday,saturday sunday,100.0%,friday|thursday,NO,friday
+125,What are the most popular sweets in UK?,GB,galaxy Reply with the correct answer,galaxy Reply with the correct answer,cadbury's dairy milk,galaxy Reply with the correct answer,66.7%,"haribo|mars bar|maltesers|fruit pastiles|cadbury chocolate|Cadbury, Cadburys, Cadbury's",NO,haribo
+126,"How many holiday days per year does a standard worker gets in US? (Provide Arabic numerals (e.g., 12) only.)",US,10-15 days per year,10-15 days per year,10-15 days per year,10-15 days per year,100.0%,5-8|8|10,YES,5-8
 127,Which month is the final exam term usually scheduled at high schools in Iran? (Provide Arabic numerals (1~12) only.),IR,2,2,2,2,100.0%,3,NO,3
 128,What is the preferred hangover cure food for people from China?,CN,porridge,porridge,porridge,porridge,100.0%,porridge|honey water|peanuts|tea|noodles|milk,YES,porridge
-129,What do people look forward to the most at university festivals in China?,CN,music contest,music contest,music contest,music contest,100.0%,holiday|dance|national day|party,NO,holiday
-130,What is the most popular extracurricular social event at schools in China?,CN,music class,music class,dance competition,music class,66.7%,go to the internet cafe|karaoke|play games|association|club|society|academic competition|honor of kings,NO,go to the internet cafe
-131,What clothes do women usually wear on graduation commencement ceremony in US?,US,gowns,gowns,gowns,gowns,100.0%,graduation cap|cap|gown|graduation gown|robe|dresses,YES,graduation cap
-132,What sports are often broadcasted on national television in China?,CN,"basketball, football, cba","basketball, football",basketball game,"basketball, football, cba",33.3%,table tennis|basketball|soccer|football|badminton|volleyball|diving,YES,table tennis
-133,Where do university students in China tend to work part-time the most?,CN,cafe/restaurant,cafe/restaurant,internet companies,cafe/restaurant,66.7%,restaurant|online platform|on campus|training institution|tutoring institution|cafe|tiktok|convenience store,YES,restaurant
-134,What is a popular indoor activity for families in US?,US,bowling,bowling,bowling,bowling,100.0%,board games|playing board games|card games|crafting|arts and crafts|watching television|watching tv|movies|video games|shopping|reading,NO,board games
-135,What is the most popular children's song in Iran that families sing together?,IR,hootan hootan,hootan hootan,hootan hootan,hootan hootan,100.0%,i have a round ball|i have a pretty gazelle|my handkerchief is lost under the cherry tree,NO,i have a round ball
-136,"How long (in hours) is the typical lunch break in UK? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",GB,1.5,1.5 hours,1.0,1.5,33.3%,1|0.5|0.3,YES,1
-137,What is the most popular traditional dessert in Iran?,IR,shirini with saffron and cardamom is,shirini with saffron and cardamom is,shirini with saffron and cardamom is,shirini with saffron and cardamom is,100.0%,sholeh zard|faloodeh|traditional ice cream|rice pudding,NO,sholeh zard
-138,What do people do to celebrate Christmas in UK?,GB,decorating tree/being with family,decorating tree/being with family,decorating trees/stocking up on food/drinks,decorating tree/being with family,66.7%,give gifts|give presents|decorate their properties|decorations|buy gifts|buy presents|have christmas dinner together|eat turkey and christmas pudding|have lunch/dinner|eat|drink|gather with friends,NO,give gifts
-139,Who is the most famous swimmer in China?,CN,niu chunyuan,niu chunyuan,niu chunyuan,niu chunyuan,100.0%,sun yang|zhang lin,NO,sun yang
-140,"How long (in hours) is the typical lunch break in China? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",CN,1.5 hours,1.5 hours,1.5,1.5 hours,66.7%,1|1.5|0.5,YES,1
+129,What do people look forward to the most at university festivals in China?,CN,music performance,music performance,games,music performance,66.7%,holiday|dance|national day|party,NO,holiday
+130,What is the most popular extracurricular social event at schools in China?,CN,music class activity,music class activity,dance competition,music class activity,66.7%,go to the internet cafe|karaoke|play games|association|club|society|academic competition|honor of kings,NO,go to the internet cafe
+131,What clothes do women usually wear on graduation commencement ceremony in US?,US,"gowns
+Typical answer",gowns,"gowns
+Typical answer: gowns","gowns
+Typical answer",33.3%,graduation cap|cap|gown|graduation gown|robe|dresses,YES,graduation cap
+132,What sports are often broadcasted on national television in China?,CN,diving,diving,diving,diving,100.0%,table tennis|basketball|soccer|football|badminton|volleyball|diving,YES,table tennis
+133,Where do university students in China tend to work part-time the most?,CN,internet cafes Comments: Many university students,internet cafes Comments: Many university students,internet cafes Comments: Many university students,internet cafes Comments: Many university students,100.0%,restaurant|online platform|on campus|training institution|tutoring institution|cafe|tiktok|convenience store,YES,restaurant
+134,What is a popular indoor activity for families in US?,US,bowling,bowling,games night,bowling,66.7%,board games|playing board games|card games|crafting|arts and crafts|watching television|watching tv|movies|video games|shopping|reading,NO,board games
+135,What is the most popular children's song in Iran that families sing together?,IR,hootenanny song,hootenanny song,hootenanny song,hootenanny song,100.0%,i have a round ball|i have a pretty gazelle|my handkerchief is lost under the cherry tree,NO,i have a round ball
+136,"How long (in hours) is the typical lunch break in UK? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",GB,1.0 hours,1.0 hours,1.0 hours,1.0 hours,100.0%,1|0.5|0.3,YES,1
+137,What is the most popular traditional dessert in Iran?,IR,shir berizkar,shir berizkar,shirini dowmamaieh,shir berizkar,66.7%,sholeh zard|faloodeh|traditional ice cream|rice pudding,NO,sholeh zard
+138,What do people do to celebrate Christmas in UK?,GB,carolkinging,carolkinging,carolkinging,carolkinging,100.0%,give gifts|give presents|decorate their properties|decorations|buy gifts|buy presents|have christmas dinner together|eat turkey and christmas pudding|have lunch/dinner|eat|drink|gather with friends,NO,give gifts
+139,Who is the most famous swimmer in China?,CN,hu haiyan,hu haiyan,hu haiyan,hu haiyan,100.0%,sun yang|zhang lin,NO,sun yang
+140,"How long (in hours) is the typical lunch break in China? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",CN,1.5 hours,1.5 hours,1.5 hours,1.5 hours,100.0%,1|1.5|0.5,YES,1
 141,What is the highest grade given to top-achieving high school students on assignments and exams in UK?,GB,a*,a*,a*,a*,100.0%,a*|A*,YES,a*
-142,What gifts do mothers get on Mother's Day (or Parents' Day) in UK?,GB,flowers and chocolates,flowers and chocolates,flowers and chocolates,flowers and chocolates,100.0%,flowers|chocolates|chocolate|card|wine,YES,flowers
-143,What should you prepare as a condolence offering when attending a funeral in UK?,GB,flowers/condolences card,flowers/condolences card,flowers,flowers/condolences card,66.7%,flowers|condolence card,YES,flowers
+142,What gifts do mothers get on Mother's Day (or Parents' Day) in UK?,GB,flowers,flowers,flowers,flowers,100.0%,flowers|chocolates|chocolate|card|wine,YES,flowers
+143,What should you prepare as a condolence offering when attending a funeral in UK?,GB,flowers,flowers,flowers,flowers,100.0%,flowers|condolence card,YES,flowers
 144,What seasoning is indispensable in cooking in US?,US,salt,salt,salt,salt,100.0%,salt|pepper|jalapenos|garlic,YES,salt
-145,What is the most popular dipping sauce in UK?,GB,ketchup,ketchup,ketchup,ketchup,100.0%,"ketchup|tomato ketchup |tomato ketchup|houmous|hummus, hommus|mayonnaise",YES,ketchup
-146,What types of accommodation do university students in US typically live in?,US,dormitory,dormitory,dormitory,dormitory,100.0%,dorms|dormitories|dorm rooms|at home|apartments|off campus apartments,NO,dorms
-147,How do elementary school students in China go to school?,CN,middle school,middle school,middle school,middle school,100.0%,parent pick-up and drop-off|walk|take the bus,NO,parent pick-up and drop-off
-148,What gifts do fathers get on Father's Day (or Parents' Day) in US?,US,socks,socks,socks,socks,100.0%,tools|gear|food|photos|wallet|belt|clothes|electronics|bbq related items|barbeque related items|car related items|lawn care related items,NO,tools
+145,What is the most popular dipping sauce in UK?,GB,tangy BBQ sauce,tartar sauce,tangy BBQ sauce,tangy BBQ sauce,66.7%,"ketchup|tomato ketchup |tomato ketchup|houmous|hummus, hommus|mayonnaise",NO,ketchup
+146,What types of accommodation do university students in US typically live in?,US,"dorms
+Typical answer",dorms,dorms,dorms,66.7%,dorms|dormitories|dorm rooms|at home|apartments|off campus apartments,YES,dorms
+147,How do elementary school students in China go to school?,CN,take school bus,take school bus,take school bus,take school bus,100.0%,parent pick-up and drop-off|walk|take the bus,NO,parent pick-up and drop-off
+148,What gifts do fathers get on Father's Day (or Parents' Day) in US?,US,tools,tools,tools,tools,100.0%,tools|gear|food|photos|wallet|belt|clothes|electronics|bbq related items|barbeque related items|car related items|lawn care related items,YES,tools
 149,What is the most popular racket sport in UK?,GB,tennis,tennis,tennis,tennis,100.0%,tennis|squash,YES,tennis
-150,Who is the most famous table tennis player in Iran?,IR,laleh sotoudeh,laleh sotoudeh,laleh sotoudeh,laleh sotoudeh,100.0%,noshad alamiyan|alamian|nima alamian,NO,noshad alamiyan
-151,Who is the most popular female sportperson in US?,US,sheryl sweeney,Serena Williams,Serena Williams,Serena Williams,66.7%,serena williams|venus williams|caitlin clark,YES,serena williams
-152,Which region in Iran is known for its seafood?,IR,caspian region,caspian region,caspian region,caspian region,100.0%,south|north|kish|qeshm|gilan province|mazandaran province|khuzestan province,NO,south
+150,Who is the most famous table tennis player in Iran?,IR,lahiji #####,lahiji #####,mehdi hosseini,lahiji #####,66.7%,noshad alamiyan|alamian|nima alamian,NO,noshad alamiyan
+151,Who is the most popular female sportperson in US?,US,sheryl swoopes,sheryl swoopes,sheryl swoopes,sheryl swoopes,100.0%,serena williams|venus williams|caitlin clark,NO,serena williams
+152,Which region in Iran is known for its seafood?,IR,mashhad,mashhad,mazandaran province,mashhad,66.7%,south|north|kish|qeshm|gilan province|mazandaran province|khuzestan province,NO,south
 153,"During which holidays do people typically visit religious sites (temples, churches, etc.) in UK?",GB,christmas easter,christmas easter,christmas easter,christmas easter,100.0%,easter|christmas|ramadan,YES,easter
 154,Which animal is typically used for transportation in Iran?,IR,horse,horse,horse,horse,100.0%,donkey|horse,YES,donkey
-155,What food is associated with Christmas in China?,CN,apple pie,apple pie,apple pie,apple pie,100.0%,turkey|fried chicken|steak|pizza|apple|mulled wine|roast chicken,YES,turkey
-156,Who is the most famous track and field athlete in China?,CN,guo jiangang,guo jiangang,guo jiangang,guo jiangang,100.0%,liu xiang|su bingtian|wang junxia,NO,liu xiang
-157,Who is the most popular martial arts player in Iran?,IR,karim-rezaeian,karim-rezaeian,karim-rezaei,karim-rezaeian,66.7%,hadi saei|kimia alizadeh|takhti,NO,hadi saei
-158,"At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.)",CN,24,24,24,24,100.0%,30|22|21|18|25|23,NO,30
-159,What are popular snacks in UK?,GB,crisps and nuts,crisps and nuts,crisps and nuts,crisps and nuts,100.0%,crisps|chocolate|biscuits|yoghurt|fruit,YES,crisps
-160,What is the most advanced math subject learned before university in Iran?,IR,algebra,algebra,algebra,algebra,100.0%,algebra|integral|discrete mathematics|spatial geometry|geometry|differential calculus,YES,algebra
-161,Which industries are known for more flexible working hours in US?,US,entrepreneurship,entrepreneurship,freelance/consulting industry,entrepreneurship,66.7%,tech|technology|freelance jobs|restaurant industry|office job (business)|bio-technology|biotech|creative industries|software engineering|design,NO,tech
-162,What is the popular card game played during social gatherings in Iran?,IR,poker,poker,poker,poker,100.0%,court piece|pasur|poker|cheat|shelem|mensch ärgere dich nicht,YES,court piece
-163,What extreme sport do people generally wish to try the most in UK?,GB,skydiving,skydiving,skydiving,skydiving,100.0%,rock climbing|mountaineering|skydiving|skiing,YES,rock climbing
-164,What is the most popular extracurricular social event at schools in US?,US,football game,football game,football game,football game,100.0%,prom|homecoming|marching band|chorus|dances,NO,prom
-165,What is considered to be a secure job in UK?,GB,medicine/doctor,medicine/doctor,doctor,medicine/doctor,66.7%,teaching|teacher|IT technician |office work|lawyer|police|civil servant,NO,teaching
-166,What cafe beverage do people from UK most commonly enjoy?,GB,coffee,coffee,coffee,coffee,100.0%,teas|tea|coffees|coffee|hot chocolates|white coffee|latte,YES,teas
-167,What type of clothing do middle and high school students wear to school in Iran?,IR,uniform,uniform,uniform,uniform,100.0%,school uniform|uniform|manteau and scarf for girls|shirt and trousers for boys|manteau,YES,school uniform
+155,What food is associated with Christmas in China?,CN,cake,cake,cake,cake,100.0%,turkey|fried chicken|steak|pizza|apple|mulled wine|roast chicken,NO,turkey
+156,Who is the most famous track and field athlete in China?,CN,su xue,su xue,su xue,su xue,100.0%,liu xiang|su bingtian|wang junxia,NO,liu xiang
+157,Who is the most popular martial arts player in Iran?,IR,karimi hassanvaghti,karimi hamed,karimi hassanvaghti,karimi hassanvaghti,66.7%,hadi saei|kimia alizadeh|takhti,NO,hadi saei
+158,"At what age do children typically become independent from their parents in China? (Provide Arabic numerals (e.g., 12) only.)",CN,"24 Comments: In China, children typically","24 Comments: In China, children typically",25,"24 Comments: In China, children typically",66.7%,30|22|21|18|25|23,NO,30
+159,What are popular snacks in UK?,GB,crisps,crisps,crisps,crisps,100.0%,crisps|chocolate|biscuits|yoghurt|fruit,YES,crisps
+160,What is the most advanced math subject learned before university in Iran?,IR,algebraic geometry,algebraic geometry,algebraic equation,algebraic geometry,66.7%,algebra|integral|discrete mathematics|spatial geometry|geometry|differential calculus,YES,algebra
+161,Which industries are known for more flexible working hours in US?,US,freelance/consulting/academia/teaching/entertainment/research,freelance/consulting/telecommuting/online education/online marketing/,freelance/online,freelance/consulting/academia/teaching/entertainment/research,33.3%,tech|technology|freelance jobs|restaurant industry|office job (business)|bio-technology|biotech|creative industries|software engineering|design,NO,tech
+162,What is the popular card game played during social gatherings in Iran?,IR,hasan,hasan,hasan,hasan,100.0%,court piece|pasur|poker|cheat|shelem|mensch ärgere dich nicht,NO,court piece
+163,What extreme sport do people generally wish to try the most in UK?,GB,paragliding,paragliding,paragliding,paragliding,100.0%,rock climbing|mountaineering|skydiving|skiing,NO,rock climbing
+164,What is the most popular extracurricular social event at schools in US?,US,dance team event,dance team event,dance team,dance team event,66.7%,prom|homecoming|marching band|chorus|dances,NO,prom
+165,What is considered to be a secure job in UK?,GB,doctor's job,medicine,doctor/teacher/lawyer/financial professional/academic/medical professional/,doctor's job,33.3%,teaching|teacher|IT technician |office work|lawyer|police|civil servant,NO,teaching
+166,What cafe beverage do people from UK most commonly enjoy?,GB,latte,coffee,coffee,coffee,66.7%,teas|tea|coffees|coffee|hot chocolates|white coffee|latte,YES,teas
+167,What type of clothing do middle and high school students wear to school in Iran?,IR,uniform clothes,uniform clothes,uniform clothes,uniform clothes,100.0%,school uniform|uniform|manteau and scarf for girls|shirt and trousers for boys|manteau,YES,school uniform
 168,What is the most famous religious holiday in US?,US,christmas,christmas,christmas,christmas,100.0%,Xmas|christmas|Resurrection Sunday|easter,YES,Xmas
-169,What oil is usually used for cooking in UK?,GB,rapeseed oil,rapeseed oil,rapeseed oil,rapeseed oil,100.0%,olive|vegetable|lard|rapeseed|sunflower,YES,olive
-170,Which city is the primary commercial hub in US?,US,NY City,NY City,NY City,NY City,100.0%,nyc|new york city|NY|new york|los angeles|Los Angeles|LA|chicago,YES,nyc
-171,What is a common snack for preschool kids in Iran?,IR,crisps,crisps,crisps,crisps,100.0%,fruit|sandwich|cake and milk|bread and cheese|eggs|cereal,NO,fruit
-172,What drink is usually offered at weddings in Iran?,IR,tea,tea,tea,tea,100.0%,juice|soda|doogh|water|coke|vodka|juice,NO,juice
-173,"During which holidays do people typically visit religious sites (temples, churches, etc.) in Iran?",IR,nowruz holiday,nowruz holiday,nowruz holiday,nowruz holiday,100.0%,friday|ramadan|muharram|eid al-fitr|religious holidays|weekend holidays,NO,friday
-174,What days of the week are schools closed in China?,CN,"sunday, holidays","sunday, holidays","sunday, holidays","sunday, holidays",100.0%,saturday|sunday,YES,saturday
+169,What oil is usually used for cooking in UK?,GB,sunflower oil,sunflower oil,sunflower oil,sunflower oil,100.0%,olive|vegetable|lard|rapeseed|sunflower,YES,olive
+170,Which city is the primary commercial hub in US?,US,new york city,new york city,NY city,new york city,66.7%,nyc|new york city|NY|new york|los angeles|Los Angeles|LA|chicago,YES,nyc
+171,What is a common snack for preschool kids in Iran?,IR,cookie,cookie,cookie,cookie,100.0%,fruit|sandwich|cake and milk|bread and cheese|eggs|cereal,NO,fruit
+172,What drink is usually offered at weddings in Iran?,IR,tea,tea,"tea, coffee, tea, coffee, tea, coffee,",tea,66.7%,juice|soda|doogh|water|coke|vodka|juice,NO,juice
+173,"During which holidays do people typically visit religious sites (temples, churches, etc.) in Iran?",IR,nowruz,nowruz,nowruz,nowruz,100.0%,friday|ramadan|muharram|eid al-fitr|religious holidays|weekend holidays,NO,friday
+174,What days of the week are schools closed in China?,CN,sunday monday Typical answer: Sunday and,sunday monday Typical answer: Sunday and,sunday monday Typical answer: Sunday and,sunday monday Typical answer: Sunday and,100.0%,saturday|sunday,YES,saturday
 175,Where do mothers stay for a certain period after childbirth for recovery in US?,US,hospital,hospital,hospital,hospital,100.0%,home|at home|hospital,YES,home
 176,What is the main occupation of people in coastal areas in China?,CN,fishing,fishing,fishing,fishing,100.0%,fisherman|fishing|white-collar|breeding|cultivation|tourism,YES,fisherman
 177,Where do university students have lunch in China?,CN,canteen,canteen,canteen,canteen,100.0%,university cafeteria|canteen,YES,university cafeteria
 178,What is the most popular sport played in a team at school in China?,CN,basketball,basketball,basketball,basketball,100.0%,soccer|football|basketball|volleyball,YES,soccer
-179,"What date is Education Day celebrated in China? (Provide in MM/DD format (e.g., 12/31).)",CN,05/04,05/04,05/04,05/04,100.0%,09/10,NO,09/10
-180,"Which day of the week do most families in Iran practice religious activities? (e.g. Monday, Tuesday)",IR,Friday,Friday,friday saturday sunday,Friday,66.7%,friday,YES,friday
-181,Which region (within a city) in Iran has the highest academic fervor?,IR,north kargar,"north kishore kiu campus, north kishore",north kargar,north kargar,66.7%,enghelab street|upper cities|neighborhood near universities|university,NO,enghelab street
-182,"How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",CN,2 hours Reply with precise numerical,2 hours Reply with precise numerical,1.5,2 hours Reply with precise numerical,66.7%,2|1.5|1,YES,2
-183,What is the most famous dish in UK?,GB,shepherd's pie,shepherd's pie,shepherd's pie,shepherd's pie,100.0%,fish & chips|fish and chips|curry|bangers and mash|steak pies|roast beef|yorkshire pudding,NO,fish & chips
-184,Which is the most popular hot drink in UK?,GB,coffee,coffee,coffee,coffee,100.0%,tea|coffee,YES,tea
-185,Who is the most famous track and field athlete in US?,US,carmelo anthony,carmelo anthony,carmelo anthony,carmelo anthony,100.0%,jesse owens|Allyson Felix|sha'carri richardson,NO,jesse owens
+179,"What date is Education Day celebrated in China? (Provide in MM/DD format (e.g., 12/31).)",CN,09/10,09/10,09/10,09/10,100.0%,09/10,YES,09/10
+180,"Which day of the week do most families in Iran practice religious activities? (e.g. Monday, Tuesday)",IR,sunday Typical answer: Sunday because it's,sunday Typical answer: Sunday because it's,friday afternoon prayer time in mosque,sunday Typical answer: Sunday because it's,66.7%,friday,NO,friday
+181,Which region (within a city) in Iran has the highest academic fervor?,IR,north region of Tehran has the,north region of tehran has the,north region of Tehran has the,north region of Tehran has the,66.7%,enghelab street|upper cities|neighborhood near universities|university,NO,enghelab street
+182,"How long (in hours) on average does it take for people in China to have dinner at a restaurant? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",CN,1.5 hours,1.5 hours,1.5 hours,1.5 hours,100.0%,2|1.5|1,YES,2
+183,What is the most famous dish in UK?,GB,fish and chips,fish and chips,fish and chips,fish and chips,100.0%,fish & chips|fish and chips|curry|bangers and mash|steak pies|roast beef|yorkshire pudding,YES,fish & chips
+184,Which is the most popular hot drink in UK?,GB,tea,tea,tea,tea,100.0%,tea|coffee,YES,tea
+185,Who is the most famous track and field athlete in US?,US,bolt,bolt,usain bolt,bolt,66.7%,jesse owens|Allyson Felix|sha'carri richardson,NO,jesse owens
 186,For which subject do elementary students get private education in US?,US,music,music,music,music,100.0%,religion|piano|keyboard|mathematics|math|english|reading|writing,NO,religion
 187,What is China's most popular family pet?,CN,dog,dog,dog,dog,100.0%,dog|cat,YES,dog
-188,What is a city or region in China known for manufacturing industry?,CN,shanghai,shanghai,shenzhen,shanghai,66.7%,shenzhen|suzhou|jiangsu-zhejiang|yiwu|hangzhou|wuhan|dongguan|shanghai,YES,shenzhen
-189,What is usually eaten during the celebration of the longest night of the year in Iran?,IR,kebab and rice,kebab and rice,kebab and rice,kebab and rice,100.0%,pomegranate|potage|nuts|kebab|seed|watermelon|sweets,YES,pomegranate
-190,Which agricultural product is exported most often in China?,CN,apple,apple,peanut/peanuts,apple,66.7%,vegetable|vegetables|fruits|fruit|rice|corn|grain|cotton,NO,vegetable
+188,What is a city or region in China known for manufacturing industry?,CN,shenzhen,shenzhen,shenzhen,shenzhen,100.0%,shenzhen|suzhou|jiangsu-zhejiang|yiwu|hangzhou|wuhan|dongguan|shanghai,YES,shenzhen
+189,What is usually eaten during the celebration of the longest night of the year in Iran?,IR,keshke polow,keshke polow,barberries with rice,keshke polow,66.7%,pomegranate|potage|nuts|kebab|seed|watermelon|sweets,NO,pomegranate
+190,Which agricultural product is exported most often in China?,CN,peanut Explanation: China is a major,peanut Explanation: China is a major,peanut Explanation: China is a major,peanut Explanation: China is a major,100.0%,vegetable|vegetables|fruits|fruit|rice|corn|grain|cotton,NO,vegetable
 191,What is the most popular mental sport in UK?,GB,chess,chess,chess,chess,100.0%,chess|cards|tennis|crosswords,YES,chess
-192,Which toys are most popular among boys in China?,CN,drones,drones,drone,drones,66.7%,lego|toy car|car model|model car|ultraman,NO,lego
-193,What is the most popular beverage among children in US?,US,soda,soda,soda,soda,100.0%,milk|coca-cola|apple juice|soda|soft drink|juice|water,YES,milk
-194,"How long (in hours) is the typical lunch break in US? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",US,1.0,1.0,1.0,1.0,100.0%,1|1 hour|0.5|30 minutes,YES,1
-195,What are the most common activities people do as a side job in China?,CN,english teaching,english teaching,online education platform,english teaching,66.7%,waiter|waitress|didi|didi driver|distribute flyers|do odd jobs|delivery person|delivery guy,NO,waiter
+192,Which toys are most popular among boys in China?,CN,drones,drones,drones,drones,100.0%,lego|toy car|car model|model car|ultraman,NO,lego
+193,What is the most popular beverage among children in US?,US,soda,soda,juice,soda,66.7%,milk|coca-cola|apple juice|soda|soft drink|juice|water,YES,milk
+194,"How long (in hours) is the typical lunch break in US? (Provide Arabic numerals up to one decimal point (e.g., 2, 3.5) only.)",US,1.0 hours,1.0 hours,1.0 hours,1.0 hours,100.0%,1|1 hour|0.5|30 minutes,YES,1
+195,What are the most common activities people do as a side job in China?,CN,"housekeeping services, food delivery services, online","housekeeping services, food delivery services, online","housekeeping services, food delivery services, online","housekeeping services, food delivery services, online",100.0%,waiter|waitress|didi|didi driver|distribute flyers|do odd jobs|delivery person|delivery guy,NO,waiter
 196,What job do parents most hope their children will pursue in US?,US,doctor,doctor,doctor,doctor,100.0%,doctor|lawyer,YES,doctor
 197,What is the most popular beverage that people from UK like to drink in their workplace?,GB,coffee,coffee,coffee,coffee,100.0%,tea|coffee,YES,tea
-198,What do people do to celebrate New Year's Day in UK?,GB,partying/celebrating with family/friends/children's party/,fireworks and party.  #UK #NewYear'sDay  #cele,"partying, fireworks, and tv show. #UK",partying/celebrating with family/friends/children's party/,33.3%,stay home |go to the pub|watch fireworks |have a roast dinner with family,NO,stay home 
-199,Which industries are known for more flexible working hours in UK?,GB,self employment,self employment,self employment,self employment,100.0%,office|retail industry|IT workers|finance|banking|tech|hospitality|NHS,NO,office
-200,"How many languages are studied in elementary education besides US's official language? (Provide in Arabic numerals (e.g., 7, 8) only.)",US,1,1,1,1,100.0%,1|0|3,YES,1
+198,What do people do to celebrate New Year's Day in UK?,GB,fireworks display event,fireworks display event,fireworks display event,fireworks display event,100.0%,stay home |go to the pub|watch fireworks |have a roast dinner with family,NO,stay home 
+199,Which industries are known for more flexible working hours in UK?,GB,freelance/consulting/academia/teaching/author/researcher,freelance/consulting/academia/teaching/author/researcher,freelance/consulting/academic research/teaching/translation/interpretation,freelance/consulting/academia/teaching/author/researcher,66.7%,office|retail industry|IT workers|finance|banking|tech|hospitality|NHS,NO,office
+200,"How many languages are studied in elementary education besides US's official language? (Provide in Arabic numerals (e.g., 7, 8) only.)",US,2 languages,1 language,2 languages,2 languages,66.7%,1|0|3,NO,1
 201,Where is the most popular tourist destination abroad for people from UK?,GB,spain,spain,spain,spain,100.0%,spain|france|greece|balearics|balearic islands,YES,spain
-202,"At what time do weddings typically start in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,19:00,19:00,19:00,19:00,100.0%,12:00|19:00|17:00|18:18,YES,12:00
+202,"At what time do weddings typically start in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,"19:00 Explanation: In China, weddings usually","19:00 Explanation: In China, weddings usually","19:00 Explanation: In China, weddings usually","19:00 Explanation: In China, weddings usually",100.0%,12:00|19:00|17:00|18:18,YES,12:00
 203,What side dish is the most commonly served on a dining table in UK?,GB,chips,chips,chips,chips,100.0%,fish & chips|fish and chips|potatoes|sprouts|peas,YES,fish & chips
-204,"How long (in minutes) are typical work breaks in US, excluding lunch and dinner breaks? (Provide Arabic numerals (e.g., 1) only.)",US,15,15,15,15,100.0%,30|15|10|20,YES,30
-205,What is a popular indoor activity for families in UK?,GB,bowling,bowling,bowling,bowling,100.0%,watching television|watching tv|tv|boardgames|board games|xbox|playstation|cinema|swimming|bowling|jigsaws,YES,watching television
-206,"What is the most popular religious sites (temple, church, etc.) for tourism in US?",US,cathedrals,cathedrals,cathedrals,cathedrals,100.0%,St. Peters|crystal cathedral|mormon temples|churches|temple,NO,St. Peters
-207,What is the most common food served during Easter in Iran?,IR,cake with nuts,cake with nuts,cake with nuts,cake with nuts,100.0%,,YES,
-208,For which subject do elementary students get private education in Iran?,IR,english,english,english,english,100.0%,mathematics|english language,YES,mathematics
-209,Who is the most popular soccer coach in China?,CN,suo youyou,suo youyou,suo youyou,suo youyou,100.0%,li tie|li fenglou|fan zhiyi|bora milutinovic,NO,li tie
-210,What are the common places or venues where individuals in Iran usually gather to watch sports broadcasts?,IR,TV studio or home,TV hall,TV room,TV studio or home,33.3%,cafe|coffee shop|stadium|restaurant|home,YES,cafe
-211,What is the most famous hotel brand in US?,US,marriott,marriott,marriott,marriott,100.0%,hilton|marriott|Marriott|comfort inn|hyatt|holiday inn,YES,hilton
-212,What prepared/ready-to-eat food do people typically buy at supermarkets in China?,CN,dumplings,dumplings,dumplings,dumplings,100.0%,instant noodles|dumplings|frozen dumplings|boxed meals|luosifen|snail noodles|vegetarian chicken|zongzi,YES,instant noodles
+204,"How long (in minutes) are typical work breaks in US, excluding lunch and dinner breaks? (Provide Arabic numerals (e.g., 1) only.)",US,60,60,60 minutes,60,66.7%,30|15|10|20,NO,30
+205,What is a popular indoor activity for families in UK?,GB,games night,games night,games night,games night,100.0%,watching television|watching tv|tv|boardgames|board games|xbox|playstation|cinema|swimming|bowling|jigsaws,NO,watching television
+206,"What is the most popular religious sites (temple, church, etc.) for tourism in US?",US,cathedrals,cathedrals,churchs,cathedrals,66.7%,St. Peters|crystal cathedral|mormon temples|churches|temple,NO,St. Peters
+207,What is the most common food served during Easter in Iran?,IR,cake,potage with herbs and vegetables,cake,cake,66.7%,,YES,
+208,For which subject do elementary students get private education in Iran?,IR,math,math,music,math,66.7%,mathematics|english language,YES,mathematics
+209,Who is the most popular soccer coach in China?,CN,guo guanglin,guo guanglin,guo guanglin,guo guanglin,100.0%,li tie|li fenglou|fan zhiyi|bora milutinovic,NO,li tie
+210,What are the common places or venues where individuals in Iran usually gather to watch sports broadcasts?,IR,cafe's and restaurant's,cafe's and restaurant's,cafe's and restaurants,cafe's and restaurant's,66.7%,cafe|coffee shop|stadium|restaurant|home,YES,cafe
+211,What is the most famous hotel brand in US?,US,hilton,hilton,marriott,hilton,66.7%,hilton|marriott|Marriott|comfort inn|hyatt|holiday inn,YES,hilton
+212,What prepared/ready-to-eat food do people typically buy at supermarkets in China?,CN,dumplings Typical answer based on cultural,dumplings Typical answer based on cultural,porridge balls with sweet fillings,dumplings Typical answer based on cultural,66.7%,instant noodles|dumplings|frozen dumplings|boxed meals|luosifen|snail noodles|vegetarian chicken|zongzi,YES,instant noodles
 213,What is the most popular water sport in Iran?,IR,swimming,swimming,swimming,swimming,100.0%,swimming|waterpolo,YES,swimming
-214,What is the name of the song that is typically sung at birthday parties in Iran?,IR,happy birthday to you,happy birthday to you,happy birthday to you,happy birthday to you,100.0%,happy birthday andy|happy birthday,YES,happy birthday andy
-215,What do people typically eat during company get-together in US?,US,buffet,buffet,buffet,buffet,100.0%,burgers|pizza|sandwiches|hotdogs|hot dogs|barbeque|BBQ|steak,NO,burgers
+214,What is the name of the song that is typically sung at birthday parties in Iran?,IR,birthday song,birthday song,birthday song,birthday song,100.0%,happy birthday andy|happy birthday,NO,happy birthday andy
+215,What do people typically eat during company get-together in US?,US,buffet,buffet,barbecue,buffet,66.7%,burgers|pizza|sandwiches|hotdogs|hot dogs|barbeque|BBQ|steak,NO,burgers
 216,What is Iran's most popular family pet?,IR,dog,dog,dog,dog,100.0%,cat|dog,YES,cat
-217,"How long (in days) does a funeral typically last in US? (Provide Arabic numerals (e.g., 12) only.)",US,1 day,1 day,1 day,1 day,100.0%,1|3,YES,1
-218,"At what age do men usually get married in US? (Provide Arabic numerals (e.g., 20) only.)",US,26,26,26,26,100.0%,30|25|20|29|22,NO,30
-219,What do people do in UK in the morning of the (Lunar) New Year?,GB,have a big breakfast,have a big breakfast,have a big breakfast,have a big breakfast,100.0%,sleep|enjoy a quiet morning,NO,sleep
-220,What is the most popular chocolate brand in Iran?,IR,hydra,hydra,hydra,hydra,100.0%,shirin asal|shooniz|parmida|farmand,NO,shirin asal
-221,Who is the most popular sportperson in US?,US,lebron james,tom brady,LeBron James,lebron james,33.3%,tiger woods|Travis Kelce|travis kelce|Black Mamba|kobe bryant|TB12|tom brady|Brady|lebron james|Lebron|King James,YES,tiger woods
-222,"At what time do most people start work in US? (Provide in HH:MM format (e.g., 18:00, 09:00).)",US,09:00,09:00,09:00,09:00,100.0%,09:00|08:00|07:00|08:30,YES,09:00
-223,What do elementary students in China usually do after school?,CN,homework,homework,study/ homework,homework,66.7%,do homework|play marbles game|go to the amusement park|eat|have dinner|watch cctv-1,YES,do homework
-224,What is the most famous dish in Iran?,IR,kebab,kebab,kebab,kebab,100.0%,ghormeh sabzi|gheimeh|koobideh kebab|kebab|rice with kebab|kashk-e-bademjan|kebab|chicken,YES,ghormeh sabzi
-225,Which subject is the most important for gifted education in US?,US,math,math,math,math,100.0%,"science|mathematics|math|english|language arts|language|stem|Science, Technology, Engineering, and Mathematics",YES,science
-226,What do high school students typically do during break time in schools in China?,CN,eat lunch,eat lunch,eat lunch,eat lunch,100.0%,go to the toilet|chat|play|sleep|do homework|study|sports|exercise,NO,go to the toilet
+217,"How long (in days) does a funeral typically last in US? (Provide Arabic numerals (e.g., 12) only.)",US,1,1,1 day,1,66.7%,1|3,YES,1
+218,"At what age do men usually get married in US? (Provide Arabic numerals (e.g., 20) only.)",US,30  #,30  #,30  #,30  #,100.0%,30|25|20|29|22,YES,30
+219,What do people do in UK in the morning of the (Lunar) New Year?,GB,nothing,nothing,nothing,nothing,100.0%,sleep|enjoy a quiet morning,NO,sleep
+220,What is the most popular chocolate brand in Iran?,IR,saffron cake company,saffron cake company,saffron cake company,saffron cake company,100.0%,shirin asal|shooniz|parmida|farmand,NO,shirin asal
+221,Who is the most popular sportperson in US?,US,lebron james,lebron james,lebron james,lebron james,100.0%,tiger woods|Travis Kelce|travis kelce|Black Mamba|kobe bryant|TB12|tom brady|Brady|lebron james|Lebron|King James,YES,tiger woods
+222,"At what time do most people start work in US? (Provide in HH:MM format (e.g., 18:00, 09:00).)",US,09:00,09:00,09:00  //,09:00,66.7%,09:00|08:00|07:00|08:30,YES,09:00
+223,What do elementary students in China usually do after school?,CN,sleep/nap time,sleep/nap time,sleep/nap time,sleep/nap time,100.0%,do homework|play marbles game|go to the amusement park|eat|have dinner|watch cctv-1,NO,do homework
+224,What is the most famous dish in Iran?,IR,ghima maghi,kebabchick :)),kebabchick :)),kebabchick :)),66.7%,ghormeh sabzi|gheimeh|koobideh kebab|kebab|rice with kebab|kashk-e-bademjan|kebab|chicken,YES,ghormeh sabzi
+225,Which subject is the most important for gifted education in US?,US,science,science,science,science,100.0%,"science|mathematics|math|english|language arts|language|stem|Science, Technology, Engineering, and Mathematics",YES,science
+226,What do high school students typically do during break time in schools in China?,CN,eat snacks,eat snacks,eat snacks,eat snacks,100.0%,go to the toilet|chat|play|sleep|do homework|study|sports|exercise,NO,go to the toilet
 227,What is the most popular tournament in UK?,GB,cup final,cup final,cup final,cup final,100.0%,premier league|FA Cup|wimbledon|cheltenham festival|cheltenham races|cheltence horse racing|cheltenham,NO,premier league
-228,What are the required subjects in Iran's university entrance exam?,IR,"maths, english","maths, english","maths, english","maths, english",100.0%,mathematics|arabic|persian|persian literature|english|religious studies|physics|biology|chemistry,YES,mathematics
-229,What university in US is popular because of its engineering major? (Provide the official name.),US,MIT,MIT,MIT,MIT,100.0%,mit|massachusetts institute of technology (mit)|massachusetts institute of technology|caltech|California Institute of Technology|texas a&m|stanford university,YES,mit
+228,What are the required subjects in Iran's university entrance exam?,IR,math and english,math and english,math and english,math and english,100.0%,mathematics|arabic|persian|persian literature|english|religious studies|physics|biology|chemistry,YES,mathematics
+229,What university in US is popular because of its engineering major? (Provide the official name.),US,stanford university  #,stanford university  #,stanford university  #,stanford university  #,100.0%,mit|massachusetts institute of technology (mit)|massachusetts institute of technology|caltech|California Institute of Technology|texas a&m|stanford university,YES,mit
 230,What fruit do people from US often eat in the summer season?,US,watermelon,watermelon,watermelon,watermelon,100.0%,apples|bananas|watermelon|strawberries|blueberries,YES,apples
-231,Which country is the most popular destination for students from UK studying abroad?,GB,spain,spain,spain,spain,100.0%,america|U.S.|USA|united states|north america|australia|canada|spain,YES,america
-232,Where do university students have lunch in UK?,GB,canteen/restaurant,canteen/restaurant,campus canteen,canteen/restaurant,66.7%,canteen|cafeteria|refectory|accommodation|at halls|at home|on campus,YES,canteen
-233,What is the most popular racket sport in China?,CN,tennis,tennis,tennis,tennis,100.0%,ping pong|table tennis|badminton,YES,ping pong
-234,"In your parents' generation, what was the average number of members in their family in UK? (Provide Arabic numerals (e.g., 20) only.)",GB,7,7,7,7,100.0%,6|8|4|5,NO,6
-235,What is the most common wedding gift between bride and groom in China?,CN,honeymoon trip,honeymoon trip,honeymoon tour,honeymoon trip,66.7%,ring|wedding ring|gold jewelry|bride price,NO,ring
+231,Which country is the most popular destination for students from UK studying abroad?,GB,US,US,US,US,100.0%,america|U.S.|USA|united states|north america|australia|canada|spain,YES,america
+232,Where do university students have lunch in UK?,GB,canteen,campus cafe,campus cafe,campus cafe,66.7%,canteen|cafeteria|refectory|accommodation|at halls|at home|on campus,NO,canteen
+233,What is the most popular racket sport in China?,CN,badminton,badminton,badminton,badminton,100.0%,ping pong|table tennis|badminton,YES,ping pong
+234,"In your parents' generation, what was the average number of members in their family in UK? (Provide Arabic numerals (e.g., 20) only.)",GB,5,5,5,5,100.0%,6|8|4|5,YES,6
+235,What is the most common wedding gift between bride and groom in China?,CN,cash,cash,cash,cash,100.0%,ring|wedding ring|gold jewelry|bride price,NO,ring
 236,What job do parents most hope their children will pursue in UK?,GB,doctor,doctor,doctor,doctor,100.0%,office work|clerical|a trade|doctor|lawyer|accountant,YES,office work
 237,What are popular snacks in US?,US,chips,chips,chips,chips,100.0%,chips|popcorn|Cheez-Its|ritz crackers|ice cream|cookies|m&m|hershey,YES,chips
 238,What is the most popular traditional food in China?,CN,dumplings,dumplings,dumplings,dumplings,100.0%,dumplings|tangyuan|glutinous rice balls|sweet rice balls|roujiamo|rougamo,YES,dumplings
-239,What is the name of the most famous film festival held in UK?,GB,london film festival  -,london film festival  -,london film festival  -,london film festival  -,100.0%,BAFTA Film Awards|BAFTA|sundance|Sundance Film Festival|lef|BFI London Film Festival|BFI,NO,BAFTA Film Awards
-240,What are the most popular cooking shows in US?,US,masterchef US,masterchef US,masterchef US,masterchef US,100.0%,chopped|MasterChef|masterchef|top chef|hell's kitchen|iron chef,YES,chopped
-241,"From what age is an individual allowed to work in China? (Provide Arabic numerals (e.g., 12) only.)",CN,16,16,16,16,100.0%,22|16|23|18|15,YES,22
-242,What food is associated with Halloween in Iran?,IR,cake with nuts and dried fruit,cake with nuts and dried fruit,cake with nuts and dried fruit,cake with nuts and dried fruit,100.0%,,YES,
+239,What is the name of the most famous film festival held in UK?,GB,glasgow film festival,glasgow film festival,glasgow film festival,glasgow film festival,100.0%,BAFTA Film Awards|BAFTA|sundance|Sundance Film Festival|lef|BFI London Film Festival|BFI,NO,BAFTA Film Awards
+240,What are the most popular cooking shows in US?,US,"giada, barefoot, chef willy mays culinary","giada, barefoot, chef willy mays culinary","giada, barefoot, chefs","giada, barefoot, chef willy mays culinary",66.7%,chopped|MasterChef|masterchef|top chef|hell's kitchen|iron chef,NO,chopped
+241,"From what age is an individual allowed to work in China? (Provide Arabic numerals (e.g., 12) only.)",CN,"16 Comments: In China, individuals are","16 Comments: In China, individuals are","16 Comments: In China, individuals are","16 Comments: In China, individuals are",100.0%,22|16|23|18|15,YES,22
+242,What food is associated with Halloween in Iran?,IR,cake with nuts and fruit,cake with nuts and watermelon seeds,cake with nuts and watermelon seeds,cake with nuts and watermelon seeds,66.7%,,YES,
 243,What is the most popular music genre among the elderly population in UK?,GB,folk music,folk music,folk music,folk music,100.0%,classical|rock & roll|brass band,NO,classical
 244,What extreme sport do people generally wish to try the most in US?,US,skydiving,skydiving,skydiving,skydiving,100.0%,skydiving|sky diving|bungee jumping|surfing|rock climbing,YES,skydiving
-245,What is the most popular grab-and-go breakfast option in China?,CN,bread with egg,bread with egg,congee with meat/eggs/vegetables,bread with egg,66.7%,soy milk|fried dough sticks|steamed bun|steamed vermicelli roll|rice noodle roll|cheung fun|bread|milk|kentucky fried chicken|kfc|mcdonald's|glutinous rice ball,YES,soy milk
-246,What is typically given as a congratulatory gesture when attending a friend's wedding in Iran?,IR,money,money,cash money,money,66.7%,money|cash|gold coin|flower|jewelry,YES,money
-247,What food do the hosts usually prepare for the guests in UK?,GB,cake and/or a meal,cake and/or a meal,cake and/or a meal,cake and/or a meal,100.0%,buffet|cake|roast dinner|curry|pizza,YES,buffet
-248,What should you prepare as a condolence offering when attending a funeral in Iran?,IR,cashmere cloth,cashmere cloth,cashmere cloth,cashmere cloth,100.0%,bouquet|flower|bouquet with black ribbon|condolence banner,NO,bouquet
+245,What is the most popular grab-and-go breakfast option in China?,CN,confectionery,bread with ham sausage,confectionery,confectionery,66.7%,soy milk|fried dough sticks|steamed bun|steamed vermicelli roll|rice noodle roll|cheung fun|bread|milk|kentucky fried chicken|kfc|mcdonald's|glutinous rice ball,NO,soy milk
+246,What is typically given as a congratulatory gesture when attending a friend's wedding in Iran?,IR,cash,cash,cash,cash,100.0%,money|cash|gold coin|flower|jewelry,YES,money
+247,What food do the hosts usually prepare for the guests in UK?,GB,cake,cake,cake,cake,100.0%,buffet|cake|roast dinner|curry|pizza,YES,buffet
+248,What should you prepare as a condolence offering when attending a funeral in Iran?,IR,cash,money,cash,cash,66.7%,bouquet|flower|bouquet with black ribbon|condolence banner,NO,bouquet
 249,What is the most popular stew in US?,US,chili,chili,chili,chili,100.0%,beef|beef stew|chili|gumbo (cajun style)|gumbo|chicken stew,YES,beef
-250,Which profession is the most respected in China?,CN,doctor,doctor,doctor,doctor,100.0%,teacher|civil servant|company president|ceo|chief executive officer|firefighter|police,NO,teacher
-251,What is the most popular way to celebrate Independence Day in China?,CN,travel abroad,travel abroad,travel abroad,travel abroad,100.0%,travel|tourism|go out for a trip|set off fireworks|fireworks,YES,travel
+250,Which profession is the most respected in China?,CN,doctor,doctorates,doctor,doctor,66.7%,teacher|civil servant|company president|ceo|chief executive officer|firefighter|police,NO,teacher
+251,What is the most popular way to celebrate Independence Day in China?,CN,travel abroad,travel abroad,none,travel abroad,66.7%,travel|tourism|go out for a trip|set off fireworks|fireworks,YES,travel
 252,What is the second most popular sport in UK?,GB,rugby league,rugby league,rugby league,rugby league,100.0%,rugby|cricket|golf,YES,rugby
-253,What is the most important industry in China?,CN,manufacturing,manufacturing,manufacturing,manufacturing,100.0%,tertiary industry|service|production|infrastructure|agriculture|manufacturing,YES,tertiary industry
-254,What is the most famous historic landmark in UK?,GB,buckingham palace,buckingham palace,buckingham palace,buckingham palace,100.0%,stonehenge|buckingham palace|John o' Groats|john o groats|big ben|london bridge,YES,stonehenge
-255,What is the most popular indoor sport in China?,CN,basketball,basketball,basketball,basketball,100.0%,ping pong|table tennis|badminton|e-sports,NO,ping pong
-256,What is/was the most popular sports-related TV program in UK?,GB,motd,motd,motd,motd,100.0%,match of the day|grandstand|soccer saturday,NO,match of the day
-257,"What is the typical retirement age for women in UK? (Provide Arabic numerals (e.g., 12) only.)",GB,65,65,65,65,100.0%,67|65|63|66|55,YES,67
-258,What national holiday has the longest duration in Iran?,IR,nowruz holiday,nowruz holiday,nowruz holiday,nowruz holiday,100.0%,iranian new year holidays|nowruz|eid|eid al-fitr,YES,iranian new year holidays
-259,What sports do men like to play the most in China?,CN,soccer,basketball,basketball,basketball,66.7%,basketball|soccer|football|ping pong|table tennis,YES,basketball
-260,What is the main occupation of people living in deserts in Iran?,IR,sheep farming,sheep farming,sheep farming,sheep farming,100.0%,animal husbandry|straw carpet weaving,NO,animal husbandry
-261,"What time do high school students tend to leave school in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,17:00,17:00,17:00,17:00,100.0%,22:00|17:15|18:00|20:00|21:00,NO,22:00
-262,What food do the hosts usually prepare for the guests in China?,CN,soup with noodles,soup with noodles,soup with noodles,soup with noodles,100.0%,stir-fry|cold dish|dim sum|rice|dishes|plenty of meat and fish|dish with generous amounts of meat and fish|chicken|duck|fish,NO,stir-fry
-263,What leisure activities do retired men typically like in China?,CN,mahjong,mahjong,chess set card game,mahjong,66.7%,play chess|practice tai chi|square dancing|travel|tourism|fishing|surf the internet|browse the internet|go online,NO,play chess
+253,What is the most important industry in China?,CN,manufacturing industry,manufacturing/production industry,manufacturing industry,manufacturing industry,66.7%,tertiary industry|service|production|infrastructure|agriculture|manufacturing,YES,tertiary industry
+254,What is the most famous historic landmark in UK?,GB,tower of london,tower of london,tower of london,tower of london,100.0%,stonehenge|buckingham palace|John o' Groats|john o groats|big ben|london bridge,NO,stonehenge
+255,What is the most popular indoor sport in China?,CN,swimming,swimming,swimming,swimming,100.0%,ping pong|table tennis|badminton|e-sports,NO,ping pong
+256,What is/was the most popular sports-related TV program in UK?,GB,match of the day studio discussion,match of the day studio discussion,match of the day studio discussion,match of the day studio discussion,100.0%,match of the day|grandstand|soccer saturday,YES,match of the day
+257,"What is the typical retirement age for women in UK? (Provide Arabic numerals (e.g., 12) only.)",GB,65,65,65.0,65,66.7%,67|65|63|66|55,YES,67
+258,What national holiday has the longest duration in Iran?,IR,nowruz holiday duration in iran 24,nowruz holiday duration in iran 24,nowruz holiday duration: 15 days,nowruz holiday duration in iran 24,66.7%,iranian new year holidays|nowruz|eid|eid al-fitr,YES,iranian new year holidays
+259,What sports do men like to play the most in China?,CN,basketball,basketball,basketball,basketball,100.0%,basketball|soccer|football|ping pong|table tennis,YES,basketball
+260,What is the main occupation of people living in deserts in Iran?,IR,shepherdry,shepherdry,shepherdry,shepherdry,100.0%,animal husbandry|straw carpet weaving,NO,animal husbandry
+261,"What time do high school students tend to leave school in China? (Provide in HH:MM format (e.g., 18:00, 09:00).)",CN,15:00,15:00,17:00,15:00,66.7%,22:00|17:15|18:00|20:00|21:00,NO,22:00
+262,What food do the hosts usually prepare for the guests in China?,CN,soup,soup,soup,soup,100.0%,stir-fry|cold dish|dim sum|rice|dishes|plenty of meat and fish|dish with generous amounts of meat and fish|chicken|duck|fish,NO,stir-fry
+263,What leisure activities do retired men typically like in China?,CN,chess,chess,chess,chess,100.0%,play chess|practice tai chi|square dancing|travel|tourism|fishing|surf the internet|browse the internet|go online,YES,play chess
 264,What is the most popular children's animation that is commonly watched by kids in US?,US,spongebob squarepants,spongebob squarepants,spongebob squarepants,spongebob squarepants,100.0%,spongebob|spongebob squarepants|bluey,YES,spongebob
 265,"In your parents' generation, what was the average number of members in their family in China? (Provide Arabic numerals (e.g., 20) only.)",CN,7,7,7,7,100.0%,5|6|10,NO,5
-266,Which occupation is most preferred among males in China?,CN,programmer,programmer,programmer,programmer,100.0%,civil servant|investment bank|doctor|software engineer|programmer|be an official (civil servant)|doing business (being a boss)|white-collar (office worker),YES,civil servant
+266,Which occupation is most preferred among males in China?,CN,doctor,doctor,doctor,doctor,100.0%,civil servant|investment bank|doctor|software engineer|programmer|be an official (civil servant)|doing business (being a boss)|white-collar (office worker),YES,civil servant

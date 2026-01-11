@@ -298,7 +298,7 @@ class LoRATrainer:
         logger.info(f"✓ Model loaded successfully")
         logger.info(f"  Parameters: {sum(p.numel() for p in self.model.parameters()) / 1e9:.2f}B")
     
-    def setup_lora(self, r: int = 16, lora_alpha: int = 32, lora_dropout: float = 0.05):
+    def setup_lora(self, r: int = 32, lora_alpha: int = 64, lora_dropout: float = 0.01):
         """Setup LoRA configuration"""
         
         logger.info("=" * 70)
@@ -311,7 +311,7 @@ class LoRATrainer:
             lora_dropout=lora_dropout,
             bias="none",
             task_type="CAUSAL_LM",
-            target_modules=["q_proj", "v_proj"],
+            target_modules=["q_proj", "v_proj", "k_proj"],
         )
         
         logger.info(f"LoRA Configuration:")
@@ -339,10 +339,12 @@ class LoRATrainer:
         self,
         train_dataset,
         val_dataset,
-        num_epochs: int = 3,
-        batch_size: int = 4,
-        learning_rate: float = 2e-4,
-        warmup_steps: int = 100,
+        num_epochs: int = 5,
+        batch_size: int = 8,
+        learning_rate: float = 1e-4,
+        warmup_steps: int = 200,              
+        gradient_accumulation_steps=2,   
+        weight_decay=0.01, 
     ):
         """Train with LoRA"""
         
@@ -379,7 +381,7 @@ class LoRATrainer:
             per_device_eval_batch_size=batch_size,
             learning_rate=learning_rate,
             warmup_steps=warmup_steps,
-            weight_decay=0.01,
+            weight_decay=weight_decay,
             logging_dir='./logs',
             logging_steps=50,
             evaluation_strategy="epoch",
@@ -389,7 +391,7 @@ class LoRATrainer:
             push_to_hub=False,
             seed=42,
             fp16=True,
-            gradient_accumulation_steps=2,
+            gradient_accumulation_steps=gradient_accumulation_steps,
         )
         
         logger.info(f"Training Configuration:")
@@ -469,16 +471,18 @@ def main():
     trainer.load_model()
     
     # Setup LoRA
-    trainer.setup_lora(r=16, lora_alpha=32, lora_dropout=0.05)
+    trainer.setup_lora(r=32, lora_alpha=64, lora_dropout=0.01)
     
     # Train
     trainer.train(
         train_dataset=train_dataset,
         val_dataset=val_dataset,
-        num_epochs=3,
-        batch_size=4,
-        learning_rate=2e-4,
-        warmup_steps=100,
+        num_epochs=5,
+        batch_size=8,
+        learning_rate=1e-4,
+        warmup_steps=200,                
+        gradient_accumulation_steps=2,   
+        weight_decay=0.01, 
     )
     
     print("\n" + "=" * 70)
