@@ -35,7 +35,16 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 
 PROMPT_TEMPLATES = {
     "CONTEXT_AWARE": """You are answering cultural questions about {country}.
-Provide concise answers (1-3 words) based on typical cultural knowledge.
+Your task: Provide ONE CORRECT FACTUAL answer in exactly 1-3 words based on typical cultural knowledge.
+
+Rules:
+  1. Answer MUST be factually correct
+  2. STOP after your answer - no explanation
+  3. If unsure, say 'none'
+
+Examples:
+  Q: What is X?
+  A: Answer
 
 Question: {question}
 
@@ -74,9 +83,9 @@ FORMAT_NAMES = {
 # ============================================================================
 
 ENSEMBLE_CONFIG = {
-    "num_predictions": 3,
-    "temperatures": [0.05, 0.10, 0.15],
-    "voting_method": "majority",
+    "num_predictions": 5,
+    "temperatures": [0.01, 0.08, 0.15, 0.35, 0.65],
+    "voting_method": "weighted",
 }
 
 print("""
@@ -148,7 +157,7 @@ def evaluate_answer_correct_method(
 # ENSEMBLE VOTING HELPER FUNCTIONS
 # ============================================================================
 
-def vote_ensemble_predictions(predictions: List[str]) -> Tuple[str, float]:
+def vote_ensemble_predictions(predictions: List[str], temperatures: List[float]) -> Tuple[str, float]:
     """
     Vote on ensemble predictions and return winning answer with confidence
     """
@@ -158,9 +167,19 @@ def vote_ensemble_predictions(predictions: List[str]) -> Tuple[str, float]:
     if len(cleaned_preds) == 1:
         return cleaned_preds[0], 1.0
     
-    vote_counts = Counter(cleaned_preds)
-    winning_answer, vote_count = vote_counts.most_common(1)[0]
-    confidence = vote_count / len(cleaned_preds)
+    weights = [1.0 / (temp + 0.1) for temp in temperatures]
+    total_weight = sum(weights)
+    weights = [w / total_weight for w in weights]
+
+    vote_scores = {}
+    for pred, weight in zip(predictions, weights):
+        pred_clean = pred.strip()
+        if pred_clean not in vote_scores:
+            vote_scores[pred_clean] = 0.0
+        vote_scores[pred_clean] += weight
+
+    winning_answer = max(vote_scores, key=vote_scores.get)
+    confidence = vote_scores[winning_answer]
     return winning_answer, confidence
 
 def format_ensemble_debug(predictions: List[str], winner: str, confidence: float) -> str:
@@ -337,7 +356,7 @@ class ModelEvaluatorWithEnsemble:
             )
             predictions.append(pred)
         
-        winning_answer, confidence = vote_ensemble_predictions(predictions)
+        winning_answer, confidence = vote_ensemble_predictions(predictions, temperatures)
         
         if debug:
             debug_str = format_ensemble_debug(predictions, winning_answer, confidence)
